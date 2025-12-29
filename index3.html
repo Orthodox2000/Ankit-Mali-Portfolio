@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Grid</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --neon: #b6ff2e;
+    }
+
+    body {
+      background: #050505;
+    }
+
+    /* base tile hover */
+    .tile {
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(182, 255, 46, .2);
+      z-index: 5;
+    }
+
+    /* project expand */
+    .project-details {
+      opacity: 0;
+      transform: scale(.95);
+      transition: all .4s ease;
+    }
+
+    .project-tile:hover .project-details {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .project-tile:hover .project-label {
+      opacity: 0;
+    }
+
+    /* sub tile hover */
+    .subtile:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(182, 255, 46, .3);
+    }
+
+    .border-animated::after {
+      content: "";
+      position: absolute;
+      top: 1%;
+      left: 1%;
+      right: 1%;
+      bottom: 1%;
+      border-radius: inherit;
+      background: inherit;
+      z-index: -1;
+      /* behind the content */
+      border: 2px solid transparent;
+      /* space for border animation */
+      z-index: -1;
+      width: 98%;
+      height: 98%;
+    }
+
+    /* Container element for animated border */
+    .border-animated {
+      position: relative;
+      display: inline-block;
+      padding: 8px;
+      border-radius: 8px;
+      overflow: hidden;
+      /* hide overflowing animated border */
+    }
+
+    /* Pseudo-element for rotating border effect */
+    .border-animated::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      background: linear-gradient(270deg,
+          var(--neon),
+          #fdfdfd00,
+          #fdfdfd00,
+          var(--neon));
+      scale: 1.3;
+      z-index: -1;
+      /* behind content */
+      /* Create a thin border effect with gradient */
+      padding: 2px;
+      /* thickness of the border line */
+      /* Animate the background to spin */
+      animation: spin 2s linear infinite;
+    }
+
+
+    /* Show and animate rotating border only on hover */
+    .border-animated:hover::before {
+      opacity: 1;
+      animation: spin 2s linear infinite;
+    }
+
+    /* Spin keyframes for the border */
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="text-white min-h-screen p-4">
+
+  <section class="max-w-4xl mx-auto grid max-md:grid-cols-1  grid-cols-12 auto-rows-[20px] gap-4">
+
+    <!-- AVATAR -->
+    <div
+      class="tile row-span-12 col-span-3 flex flex-col items-center justify-center rounded-2xl bg-zinc-900 border border-zinc-800 ">
+      <div
+        class="w-24  h-24 rounded-full border-4 border-[color:var(--neon)] flex items-center justify-center animate-pulse">
+        <span class="text-[color:var(--neon)] font-bold text-xl">AM</span>
+      </div>
+      <p class="mt-3 font-semibold">Ankit Mali</p>
+      <p class="text-sm text-zinc-400">Frontend Developer</p>
+    </div>
+
+    <!-- METRIC -->
+    <div
+      class="tile rounded-2xl bg-zinc-900 row-span-3 col-span-2  border border-zinc-800 flex flex-col items-center justify-center border-animated">
+      <span class="text-4xl font-bold text-[color:var(--neon)]">10+</span>
+      <span class="text-sm text-zinc-400 mt-1">Projects</span>
+    </div>
+
+    <div
+      class="tile rounded-2xl bg-zinc-900 border row-span-3 min-w-full col-span-2 border-zinc-800 flex flex-col items-center justify-center border-animated">
+      <span class="text-4xl font-bold text-[color:var(--neon)]">3+</span>
+      <span class="text-sm text-zinc-400 mt-1">Years Experience</span>
+    </div>
+
+    <div
+      class="tile rounded-2xl bg-zinc-900 border min-w-full row-span-3 col-span-2 border-zinc-800 flex flex-col items-center justify-center border-animated">
+      <span class="text-4xl font-bold text-[color:var(--neon)]">12+</span>
+      <span class="text-sm text-zinc-400 mt-1">Technologies</span>
+    </div>
+
+        <!-- CONTACT -->
+    <div class="tile p-4 rounded-2xl bg-zinc-900 border max-lg:w-full row-span-12 col-span-3 border-zinc-800 border-animated ">
+      <h3 class="text-[color:var(--neon)] font-semibold mb-3">Contact</h3>
+      <div class="grid grid-cols-1 gap-3 md:grid-col-2">
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center  text-xs" href="mailto:mail@ankitmali.work.gd">mali@ankitmali.work.gd</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center  text-xs" href="https://wa.me/9082159027">WhatsApp</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center   text-xs" href="#">Phone / Text</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center  text-xs" href="https://github.com/Orthodox2000/">GitHub :orthodox2000</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center  text-xs" href="https://leetcode.com/u/ankitmali2000/">leetcode</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center  text-xs" href="https://facebook.com/ankitmali2017">Facebook</a>
+        <a class="subtile bg-zinc-800 rounded-xl p-3 text-center   text-xs" href="https://www.instagram.com/ankit_mali_2000/">IG : @ankit_mali_2000</a> 
+        
+      </div>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="tile  row-span-9 p-4 col-span-4 rounded-2xl bg-zinc-900 border border-zinc-800 ">
+      <h3 class="text-[color:var(--neon)] font-semibold mb-3">Top Projects Completed</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 " id="detailclass">
+
+       
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center font-semibold text-center">XO <br>game</div>
+          <a href="https://xo-with-nextjs.vercel.app/"><div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">Simple XO game with NextJS <br> ( CLick to Visit )</p>
+          </div> 
+          </a>
+        </div>
+
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center font-semibold">MediCare</div>
+           <a href="https://medi-care-roan.vercel.app/"><div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">Health monitoring Service<br> ( CLick to Visit )</p>
+          </div> 
+          </a>
+        </div>
+        
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center text-center font-semibold">ISP Website</div>
+          <a href="https://ankitmali.rf.gd/"><div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">fully hosted frontend website for ISP <br> ( CLick to Visit )</p>
+          </div> 
+          </a>
+        </div>
+      </div>
+
+        <h3 class="text-[color:var(--neon)] font-semibold mb-3 mt-4">Projects Ongoing</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 " id="detailclass">
+
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center font-semibold">MediCare</div>
+          <div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">Health monitoring Service<br> ( CLick to Visit )</p>
+          </div> 
+        </div>
+        
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center text-center font-semibold">ISP Website</div>
+          <div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">fully hosted frontend website for ISP <br> ( CLick to Visit )</p>
+          </div> 
+        </div>
+        
+        <div
+          class="project-tile tile relative h-24 bg-zinc-800 rounded-xl border border-zinc-700 overflow-hidden border-animated">
+          <div class="project-label absolute inset-0 flex items-center justify-center font-semibold">MediCare</div>
+          <div class="project-details absolute inset-0 p-3 text-xs">
+            <p class="text-[10px] 
+            text-center">Health monitoring Service<br> ( CLick to Visit )</p>
+          </div> 
+        </div>
+        </div> 
+        
+        
+      </div>
+
+    </div>
+    </div>
+
+
+      <!-- EDUCATION -->
+    <div class="tile p-4 rounded-2xl bg-zinc-900 row-span-9 col-span-2 border border-zinc-800 border-animated">
+      <h3 class="text-[color:var(--neon)] font-semibold mb-2">Education</h3>
+      <div class="grid grid-cols-1 gap-3">
+        <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs text-center text-[color:var(--neon)] font-semibold">St.Wilfred's College of ACS <br>(&nbsp;Mumbai University&nbsp;)<br><p
+          class="text-white m-1">Bachelor's of science<br> (&nbsp;I.T&nbsp;)</p></div>
+        <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs text-center text-[color:var(--neon)] font-semibold">Lady Khatun Marium School<br>(&nbsp;CBSE&nbsp;) <br><p
+          class="text-white m-1  ">H.S.C<br>(&nbsp;Science&nbsp;)</p>
+        </div> 
+      </div>
+    </div>
+
+      
+    <!-- ACHIEVEMENTS -->
+    <div class="tile p-4 rounded-2xl bg-zinc-900 border row-span-9 col-span-4 border-zinc-800 border-animated">
+      <h3 class="text-[color:var(--neon)] font-semibold mb-2">Achievements</h3>
+      <p class="text-sm text-zinc-400">
+        • Pixel Cup Winner<br>
+        • 10+ Live Projects
+      </p>
+    </div>
+
+    
+    <!-- SKILLS -->
+    <div class="tile p-4 rounded-2xl bg-zinc-900 border border-zinc-800  row-span-9 col-span-6 ">
+      <h3 class="text-[color:var(--neon)] font-semibold mb-3">Technical Skills</h3>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Web Development & Responsive Design</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Next.js & React.js Frameworks</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Database Management & Optimization</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">AWS Cloud & Deployment</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Version Control with Git & GitHub</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Python Programming</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">C/C++ Programming</div> 
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Android Basic Development</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">Bootstrap and tailwindCSS Framework</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">PHP for Server-Side Scripting</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">API Development & RESTful Services</div>
+  <div class="subtile bg-zinc-800 rounded-xl p-2 text-xs border-animated flex items-center text-center">UI/UX Designing</div>
+     
+</div>
+    </div>
+
+<!-- METRIC -->
+    <div
+      class="tile rounded-2xl bg-zinc-900 row-span-5 col-span-2  border border-zinc-800 flex flex-col items-center justify-center border-animated">
+      <span class="text-4xl font-bold text-[color:var(--neon)]">10+</span>
+      <span class="text-sm text-zinc-400 mt-1">Projects</span>
+    </div>
+    <div
+      class="tile rounded-2xl bg-zinc-900 row-span-4 col-span-2  border border-zinc-800 flex flex-col items-center justify-center border-animated">
+      <span class="text-4xl font-bold text-[color:var(--neon)]">10+</span>
+      <span class="text-sm text-zinc-400 mt-1">Projects</span>
+    </div>
+
+
+  </section>
+</body>
+<script src="./script.js"> </script>
+
+</html>
