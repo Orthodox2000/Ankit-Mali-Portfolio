@@ -1,0 +1,9 @@
+/figma_src/
+figma_src.zip
+
+/node_modules/
+.npm-cache/
+npm-cache/
+resume_extracted.txt
+*.log
+.DS_Store

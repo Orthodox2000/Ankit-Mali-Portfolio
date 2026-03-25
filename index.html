@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="description" content="Ankit Mali &#8212; bento grid portfolio." />
+  <title>Ankit Mali &#183; Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .muted {
+        @apply text-white/65;
+      }
+
+      .sq {
+        @apply inline-grid h-[22px] w-[22px] place-items-center rounded-[10px] border border-white/10 bg-white/[0.06] text-[11px] font-black text-white/90;
+      }
+
+      .hint {
+        @apply ml-auto text-white/55 text-[11px] font-semibold;
+      }
+
+      .stack-pill {
+        @apply flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-3 py-[10px] text-[12px] font-extrabold text-white/85 transition;
+        @apply hover:-translate-y-0.5 hover:border-violet-300/25 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)];
+      }
+
+      .btn {
+        @apply inline-flex items-center justify-center rounded-[14px] border border-white/10 bg-white/[0.06] px-3 py-[10px] text-[12px] font-extrabold text-white/85 transition;
+        @apply hover:-translate-y-0.5 hover:border-violet-300/25 hover:shadow-[0_24px_50px_rgba(0,0,0,0.45)];
+      }
+
+      .btn-primary {
+        @apply inline-flex items-center justify-center rounded-[14px] border border-violet-300/30 bg-gradient-to-br from-violet-300 to-violet-600 px-3 py-[10px] text-[12px] font-extrabold text-black/90 transition;
+        @apply hover:-translate-y-0.5 hover:shadow-[0_24px_60px_rgba(124,58,237,0.22)];
+      }
+
+      .metric {
+        @apply rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.045] to-white/[0.025] px-4 py-3 transition;
+        @apply hover:-translate-y-0.5 hover:border-white/15 hover:shadow-[0_30px_70px_rgba(0,0,0,0.55)];
+      }
+
+      .metric-num {
+        @apply text-[28px] font-black tracking-[-0.03em] text-white/90 leading-none;
+      }
+
+      .metric-lbl {
+        @apply mt-2 flex items-center gap-2 text-[12px] font-extrabold text-white/70;
+      }
+
+      .metric-lbl::before {
+        content: "";
+        @apply h-[10px] w-[10px] rounded-full bg-gradient-to-br from-violet-300 to-violet-600 shadow-[0_10px_30px_rgba(124,58,237,0.25)];
+      }
+
+      .chip {
+        @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-[11px] font-extrabold text-white/75;
+      }
+
+      .proj-btn {
+        @apply flex flex-col justify-between gap-2.5 rounded-2xl border border-white/10 bg-gradient-to-b from-black/35 to-black/15 p-3.5 transition min-h-[56px];
+        @apply hover:-translate-y-0.5 hover:border-violet-300/25 hover:from-violet-500/20 hover:to-black/20 hover:shadow-[0_26px_55px_rgba(0,0,0,0.52)];
+      }
+
+      .proj-row {
+        @apply flex flex-col items-start gap-1 min-w-0;
+      }
+
+      .proj-emoji {
+        @apply text-[18px] leading-none;
+      }
+
+      .proj-name {
+        @apply text-[13px] font-black tracking-[-0.01em] text-white/95 leading-snug;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .proj-hint {
+        @apply text-[12px] font-extrabold text-white/60;
+      }
+
+      .presence-btn {
+        @apply flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-3 py-[10px] text-[12px] font-extrabold text-white/85 transition;
+        @apply hover:-translate-y-0.5 hover:border-violet-300/25 hover:shadow-[0_26px_55px_rgba(0,0,0,0.42)];
+      }
+
+      .step {
+        @apply flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-3 py-[10px] text-[12px] font-extrabold text-white/85;
+      }
+
+      .step-ico {
+        @apply inline-grid h-[18px] w-[18px] place-items-center rounded-[6px] border border-white/10 bg-white/[0.06] text-[11px] font-black text-white/85;
+      }
+
+      .exp-item {
+        @apply rounded-2xl border border-white/10 bg-black/20 p-3;
+      }
+
+      .exp-top {
+        @apply flex items-baseline justify-between gap-3;
+      }
+
+      .exp-role {
+        @apply text-[12px] font-black text-white/90;
+      }
+
+      .exp-time {
+        @apply text-[11px] font-semibold text-white/55 whitespace-nowrap;
+      }
+    }
+  </style>
+
+  <style>
+    :root {
+      --bg: #07070a;
+      --p1: rgba(124, 58, 237, 0.18);
+      --p2: rgba(167, 139, 250, 0.10);
+      --p3: rgba(196, 181, 253, 0.10);
+    }
+
+    body {
+      background:
+        radial-gradient(900px 520px at 25% 10%, var(--p1), transparent 55%),
+        radial-gradient(800px 520px at 75% 15%, var(--p2), transparent 60%),
+        radial-gradient(900px 620px at 80% 85%, var(--p3), transparent 60%),
+        var(--bg);
+    }
+
+    .noise::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(90deg,
+          rgba(255, 255, 255, 0.05) 0px,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 1px,
+          transparent 8px);
+      opacity: 0.035;
+      mix-blend-mode: overlay;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .avatar::before {
+      content: "";
+      position: absolute;
+      inset: -28px;
+      background: conic-gradient(from 0deg, rgba(167, 139, 250, 0.65), rgba(255, 255, 255, 0.0), rgba(124, 58, 237, 0.65));
+      animation: spin 6.5s linear infinite;
+      opacity: 0.7;
+    }
+
+    .ring-rotate::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      padding: 1px;
+      border-radius: inherit;
+      background: conic-gradient(from 0deg,
+          rgba(167, 139, 250, 0.75),
+          rgba(255, 255, 255, 0.0),
+          rgba(124, 58, 237, 0.75));
+      animation: spin 8.5s linear infinite;
+      opacity: 0.55;
+      pointer-events: none;
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    [data-tilt="true"] {
+      transform: perspective(900px) translateY(var(--ty, 0px)) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    [data-tilt="true"]:hover {
+      --ty: -2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .avatar::before,
+      .ring-rotate::before {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+  <div class="min-h-screen px-[5vw] py-4 md:py-6 grid place-items-center text-white">
+    <div
+      class="noise relative box-border w-full max-w-[1312px] overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-b from-white/[0.02] to-white/[0.015] shadow-[0_60px_140px_rgba(0,0,0,0.65)] p-3 md:p-4 2xl:origin-top 2xl:scale-90">
+
+      <div class="grid gap-3 justify-center items-start lg:items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)_minmax(0,1fr)_minmax(0,0.7fr)]"
+        aria-label="Bento Grid Portfolio">
+
+        <!-- Column 1 -->
+        <div class="flex flex-col gap-3 min-w-0 lg:h-full">
+          <section class="js-tilt ring-rotate relative rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            data-tilt="true" aria-label="My Stacks">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span
+                class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span
+                  class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]"
+                  aria-hidden="true">
+                  <span class="h-2 w-2 rounded-[3px] bg-white/90"></span>
+                </span>
+                My Stacks
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Tech Arsenal</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div class="stack-pill"><span class="sq">N</span> Next.js <span class="hint">Apps</span></div>
+              <div class="stack-pill"><span class="sq">R</span> React <span class="hint">UI</span></div>
+              <div class="stack-pill"><span class="sq">T</span> Tailwind <span class="hint">CSS</span></div>
+              <div class="stack-pill"><span class="sq">F</span> Figma <span class="hint">UX</span></div>
+              <div class="stack-pill"><span class="sq">M</span> MongoDB <span class="hint">DB</span></div>
+              <div class="stack-pill"><span class="sq">A</span> AWS <span class="hint">Cloud</span></div>
+              <div class="stack-pill"><span class="sq">G</span> GitHub <span class="hint">VC</span></div>
+              <div class="stack-pill"><span class="sq">SQL</span> MySQL <span class="hint">DB</span></div>
+            </div>
+          </section>
+
+          <section class="js-tilt flex flex-col min-h-0 flex-1 rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            data-tilt="true" aria-label="Projects">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span
+                class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span
+                  class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]"
+                  aria-hidden="true">
+                  <span class="h-2 w-2 rounded-[3px] bg-white/90"></span>
+                </span>
+                Projects
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Works Gallery</h2>
+            </div>
+
+            <div id="projects-completed" class="grid flex-1 content-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2"
+              aria-label="Project links"></div>
+          </section>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="flex flex-col gap-3 min-w-0">
+          <div class="grid grid-cols-3 gap-3" aria-label="Metrics">
+            <div class="metric">
+              <div class="metric-num">10+</div>
+              <div class="metric-lbl">Projects</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">3+</div>
+              <div class="metric-lbl">Years</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">12+</div>
+              <div class="metric-lbl">Tech</div>
+            </div>
+          </div>
+
+          <section class="js-tilt rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            data-tilt="true" aria-label="Profile">
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span class="h-2 w-2 rounded-full bg-gradient-to-br from-violet-400 to-violet-600"></span>
+                Available To Work
+              </span>
+              <a class="btn" href="./ANKIT_MALI_RESUME_MARCH_4.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="avatar relative h-[62px] w-[62px] overflow-hidden rounded-[20px] border border-white/10 bg-gradient-to-br from-violet-400/30 to-violet-600/10">
+                <span class="absolute inset-0 grid place-items-center font-extrabold tracking-[0.08em] bg-black/20 backdrop-blur-md">AM</span>
+              </div>
+              <div class="min-w-0">
+                <div class="font-extrabold tracking-[-0.02em]">Ankit Mali</div>
+                <div class="text-[12px] text-white/70">IT Graduate &#183; Web Designer &#183; Domain Administrator</div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="chip">Panvel (Navi Mumbai)</span>
+              <span class="chip">Tri-lingual</span>
+              <span class="chip">B.Sc. IT (2023&#8212;2026)</span>
+              <span class="chip">University of Mumbai</span>
+            </div>
+
+            <div class="mt-2 text-[12px] text-white/65">
+              Website:
+              <a class="underline decoration-white/20 hover:decoration-white/50" href="https://ankit-mali.vercel.app" target="_blank" rel="noreferrer noopener">ankit-mali.vercel.app</a>
+            </div>
+
+            <div class="mt-1 text-[12px] text-white/65">
+              Phone:
+              <a class="underline decoration-white/20 hover:decoration-white/50" href="tel:+919082159027">+91 90821 59027</a>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 mt-3 max-sm:grid-cols-1">
+              <a class="stack-pill" href="https://www.instagram.com/ankit_mali_2000/" target="_blank" rel="noreferrer noopener">
+                <span class="sq">IG</span> DM me (Instagram) <span class="hint">&#8599;</span>
+              </a>
+              <a class="stack-pill" href="https://wa.me/9082159027" target="_blank" rel="noreferrer noopener">
+                <span class="sq">WA</span> WhatsApp Me <span class="hint">&#8599;</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            aria-label="Clients">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]" aria-hidden="true"><span class="h-2 w-2 rounded-[3px] bg-white/90"></span></span>
+                My Clients
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Satisfied Partners</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div class="stack-pill"><span class="sq">S</span> Startups <span class="hint">MVP</span></div>
+              <div class="stack-pill"><span class="sq">B</span> Businesses <span class="hint">Web</span></div>
+              <div class="stack-pill"><span class="sq">A</span> Agencies <span class="hint">UI</span></div>
+              <div class="stack-pill"><span class="sq">T</span> Teams <span class="hint">Dash</span></div>
+            </div>
+          </section>
+
+          <section class="ring-rotate relative rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            aria-label="Services">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span
+                class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span
+                  class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]"
+                  aria-hidden="true">
+                  <span class="h-2 w-2 rounded-[3px] bg-white/90"></span>
+                </span>
+                Services
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Solutions Suite</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div class="stack-pill"><span class="sq">UI</span> UI Design <span class="hint">Clean</span></div>
+              <div class="stack-pill"><span class="sq">FE</span> Frontend Dev <span class="hint">Fast</span></div>
+            </div>
+
+            <div class="flex justify-center mt-3">
+              <a class="btn-primary" href="mailto:mail@ankitmali.work.gd">View All Services</a>
+            </div>
+          </section>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="flex flex-col gap-3 min-w-0">
+          <section class="js-tilt rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            data-tilt="true" aria-label="Experience">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]" aria-hidden="true"><span class="h-2 w-2 rounded-[3px] bg-white/90"></span></span>
+                Experience
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Work History</h2>
+            </div>
+
+            <div class="grid gap-2">
+              <div class="exp-item">
+                <div class="exp-top"><span class="exp-role">Web Development Intern</span><span class="exp-time">Mar 2026 &#8212; Present</span></div>
+                <div class="text-[12px] text-white/65">SMARTIQ Academy, Vashi</div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top"><span class="exp-role">Freelance Domain &amp; Web Administrator</span><span class="exp-time">Feb 2026 &#8212; Present</span></div>
+                <div class="text-[12px] text-white/65">DC Infoway, Kalwa</div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top"><span class="exp-role">Office Manager</span><span class="exp-time">Feb 2025 &#8212; Feb 2026</span></div>
+                <div class="text-[12px] text-white/65">Haripriya Developers and Builders</div>
+              </div>
+            </div>
+
+            <div class="mt-3 text-center text-[12px] text-white/65">
+              GitHub:
+              <a class="underline decoration-white/20 hover:decoration-white/50" href="https://github.com/Orthodox2000/" target="_blank" rel="noreferrer noopener">Orthodox2000</a>
+            </div>
+          </section>
+
+          <section class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            aria-label="Online Presence">
+            <div class="grid place-items-center text-center gap-2 mb-3">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]" aria-hidden="true"><span class="h-2 w-2 rounded-[3px] bg-white/90"></span></span>
+                Follow Me
+              </span>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Online Presence</h2>
+            </div>
+
+            <div class="grid gap-2">
+              <a class="presence-btn" href="https://www.instagram.com/ankit_mali_2000/" target="_blank" rel="noreferrer noopener"><span class="sq">IG</span><span class="truncate">@ankit_mali_2000</span><span class="hint">&#8599;</span></a>
+              <a class="presence-btn" href="https://github.com/Orthodox2000/" target="_blank" rel="noreferrer noopener"><span class="sq">GH</span><span class="truncate">Orthodox2000</span><span class="hint">&#8599;</span></a>
+              <a class="presence-btn" href="#" aria-disabled="true" title="Add your LinkedIn URL here"><span class="sq">IN</span><span class="truncate">LinkedIn</span><span class="hint">Soon</span></a>
+              <a class="presence-btn" href="https://leetcode.com/u/ankitmali2000/" target="_blank" rel="noreferrer noopener"><span class="sq">LC</span><span class="truncate">ankitmali2000</span><span class="hint">&#8599;</span></a>
+              <a class="presence-btn" href="https://facebook.com/ankitmali2017" target="_blank" rel="noreferrer noopener"><span class="sq">FB</span><span class="truncate">ankitmali2017</span><span class="hint">&#8599;</span></a>
+            </div>
+          </section>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="flex flex-col gap-3 min-w-0">
+          <section class="js-tilt rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+            data-tilt="true" aria-label="Call to action">
+            <div class="grid place-items-center text-center gap-2">
+              <div class="grid h-11 w-11 place-items-center rounded-2xl border border-white/10 bg-black/25 text-violet-300 shadow-[0_18px_45px_rgba(124,58,237,0.18)]">&#9819;</div>
+              <h2 class="text-[18px] font-extrabold tracking-[-0.02em]">Let&#39;s Work Together</h2>
+              <p class="text-[12px] text-white/65">Let&#39;s make something professional, responsive, and polished.</p>
+              <div class="grid w-full gap-2 mt-2">
+                <a class="btn-primary w-full" href="mailto:mail@ankitmali.work.gd">Email Me</a>
+                <a class="btn w-full" href="https://wa.me/9082159027" target="_blank" rel="noreferrer noopener">Schedule a Call</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
