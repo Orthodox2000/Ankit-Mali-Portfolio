@@ -20,7 +20,7 @@
       }
 
       .sq {
-        @apply inline-grid h-[22px] w-[22px] place-items-center rounded-[10px] border border-white/10 bg-white/[0.06] text-[11px] font-black text-white/90;
+        @apply inline-grid h-[22px] w-[25px] place-items-center rounded-[10px] border border-white/10 bg-white/[0.06] text-[11px] font-black text-white/90;
       }
 
       .hint {
@@ -28,7 +28,7 @@
       }
 
       .stack-pill {
-        @apply flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-3 py-[10px] text-[12px] font-extrabold text-white/85 transition;
+        @apply flex items-center gap-2 min-w-0 rounded-2xl border border-white/10 bg-black/20 px-3 py-[10px] text-[12px] font-extrabold text-white/85 transition;
         @apply hover:-translate-y-0.5 hover:border-violet-300/25 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)];
       }
 
@@ -116,6 +116,13 @@
 
       .exp-time {
         @apply text-[11px] font-semibold text-white/55 whitespace-nowrap;
+      }
+
+      .clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     }
   </style>
@@ -405,7 +412,7 @@
             </div>
           </section>
 
-          <section class="js-tilt rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
+          <section id="contact" class="js-tilt rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.03] p-4 shadow-[0_30px_90px_rgba(0,0,0,0.55)]"
             data-tilt="true" aria-label="Call to action">
             <div class="grid place-items-center text-center gap-2">
               <div class="grid h-11 w-11 place-items-center rounded-2xl border border-white/10 bg-black/25 text-violet-300 shadow-[0_18px_45px_rgba(124,58,237,0.18)]">&#9819;</div>
@@ -447,15 +454,15 @@
         <div class="flex flex-col gap-3 min-w-0">
           <div class="grid grid-cols-3 gap-3" aria-label="Metrics">
             <div class="metric">
-              <div class="metric-num">10+</div>
-              <div class="metric-lbl">Projects</div>
+              <div class="metric-num text-center w-full">10+</div>
+              <div class="metric-lbl  text-center w-full">Projects</div>
             </div>
             <div class="metric">
-              <div class="metric-num">3+</div>
-              <div class="metric-lbl">Years</div>
+              <div class="metric-num text-center w-full">3+</div>
+              <div class="metric-lbl text-center w-full">Years</div>
             </div>
             <div class="metric">
-              <div class="metric-num">12+</div>
+              <div class="metric-num text-center w-full">12+</div>
               <div class="metric-lbl">Tech</div>
             </div>
           </div>
@@ -518,10 +525,10 @@
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <div class="stack-pill"><span class="sq">S</span> Startups <span class="hint">MVP</span></div>
-              <div class="stack-pill"><span class="sq">B</span> Businesses <span class="hint">Web</span></div>
-              <div class="stack-pill"><span class="sq">A</span> Agencies <span class="hint">UI</span></div>
-              <div class="stack-pill"><span class="sq">T</span> Teams <span class="hint">Dash</span></div>
+              <div class="stack-pill"><span class="sq">D</span> DCInfoway <span class="hint">Web</span></div>
+              <div class="stack-pill"><span class="sq">H</span> HomeCare24 <span class="hint">UI</span></div>
+              <div class="stack-pill"><span class="sq">S</span> SmartIQ <span class="hint">App</span></div>
+              <div class="stack-pill"><span class="sq">M</span> MediCare <span class="hint">App</span></div>
             </div>
           </section>
 
@@ -543,10 +550,16 @@
             <div class="grid grid-cols-2 gap-2">
               <div class="stack-pill"><span class="sq">UI</span> UI Design <span class="hint">Clean</span></div>
               <div class="stack-pill"><span class="sq">FE</span> Frontend Dev <span class="hint">Fast</span></div>
+              <div class="stack-pill"><span class="sq">BE</span> Backend Dev <span class="hint">Stable</span></div>
+              <div class="stack-pill"><span class="sq">API</span> API Implement <span class="hint">Quick</span></div>
+              <div class="stack-pill"><span class="sq">IoT</span> IoT dev <span class="hint">Cheaper</span></div>
+              <div class="stack-pill"><span class="sq">NE</span> Netwrok Mgt <span class="hint">Reliable</span></div>
+              <div class="stack-pill"><span class="sq">DA</span> Domain Admin <span class="hint">24x7</span></div>
+              <div class="stack-pill"><span class="sq">IT</span> IT advice <span class="hint">Free</span></div>
             </div>
 
             <div class="flex justify-center mt-3">
-              <a class="btn-primary" href="mailto:mail@ankitmali.work.gd">View All Services</a>
+              <button id="open-services" class="btn-primary" type="button">View All Services</button>
             </div>
           </section>
         </div>
@@ -566,15 +579,20 @@
             <div class="grid gap-2">
               <div class="exp-item">
                 <div class="exp-top"><span class="exp-role">Web Development Intern</span><span class="exp-time">Mar 2026 &#8212; Present</span></div>
-                <div class="text-[12px] text-white/65">SMARTIQ Academy, Vashi</div>
+                <div class="text-[12px] text-white/65">SmartIQ Academy, Vashi</div>
               </div>
               <div class="exp-item">
-                <div class="exp-top"><span class="exp-role">Freelance Domain &amp; Web Administrator</span><span class="exp-time">Feb 2026 &#8212; Present</span></div>
+                <div class="exp-top"><span class="exp-role">Freelance Domain Administrator</span><span class="exp-time">Feb 2026 &#8212; Present</span></div>
                 <div class="text-[12px] text-white/65">DC Infoway, Kalwa</div>
               </div>
               <div class="exp-item">
                 <div class="exp-top"><span class="exp-role">Office Manager</span><span class="exp-time">Feb 2025 &#8212; Feb 2026</span></div>
                 <div class="text-[12px] text-white/65">Haripriya Developers and Builders</div>
+              </div>
+              
+              <div class="exp-item">
+                <div class="exp-top"><span class="exp-role">Work Readiness Program</span><span class="exp-time">Jan 2026 &#8212; Feb 2026</span></div>
+                <div class="text-[12px] text-white/65">Reliance CWW Program</div>
               </div>
             </div>
 
@@ -597,7 +615,7 @@
             <div class="grid gap-2">
               <a class="presence-btn" href="https://www.instagram.com/ankit_mali_2000/" target="_blank" rel="noreferrer noopener"><span class="sq">IG</span><span class="truncate">@ankit_mali_2000</span><span class="hint">&#8599;</span></a>
               <a class="presence-btn" href="https://github.com/Orthodox2000/" target="_blank" rel="noreferrer noopener"><span class="sq">GH</span><span class="truncate">Orthodox2000</span><span class="hint">&#8599;</span></a>
-              <a class="presence-btn" href="#" aria-disabled="true" title="Add your LinkedIn URL here"><span class="sq">IN</span><span class="truncate">LinkedIn</span><span class="hint">Soon</span></a>
+              <a class="presence-btn" href="https://www.linkedin.com/in/ankit-mali-720b61337" target="_blank" title="Add your LinkedIn URL here"><span class="sq">LN</span><span class="truncate">LinkedIn</span><span class="hint">&#8599;</span></a>
               <a class="presence-btn" href="https://leetcode.com/u/ankitmali2000/" target="_blank" rel="noreferrer noopener"><span class="sq">LC</span><span class="truncate">ankitmali2000</span><span class="hint">&#8599;</span></a>
               <a class="presence-btn" href="https://facebook.com/ankitmali2017" target="_blank" rel="noreferrer noopener"><span class="sq">FB</span><span class="truncate">ankitmali2017</span><span class="hint">&#8599;</span></a>
             </div>
@@ -624,6 +642,143 @@
             <div id="projects-completed" class="grid flex-1 content-start grid-cols-1 gap-2"
               aria-label="Project links"></div>
           </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Modal -->
+  <div id="services-modal" class="fixed inset-0 z-[80] hidden overflow-y-auto p-4 sm:p-6" aria-hidden="true">
+    <div data-modal-overlay class="absolute inset-0 bg-black/55 backdrop-blur-[6px]"></div>
+
+    <div class="relative w-full max-w-[980px]">
+      <div role="dialog" aria-modal="true" aria-labelledby="services-title"
+        class="relative max-h-[92vh] overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-b from-white/[0.10] to-white/[0.05] backdrop-blur-xl shadow-[0_60px_140px_rgba(0,0,0,0.7)]">
+        <div class="max-h-[92vh] overflow-y-auto overscroll-contain p-5 pr-4 sm:p-6 sm:pr-5">
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[11px] font-semibold text-white/80">
+                <span class="inline-grid h-[18px] w-[18px] place-items-center rounded-[7px] bg-gradient-to-br from-violet-400 to-violet-600 shadow-[0_12px_30px_rgba(124,58,237,0.25)]" aria-hidden="true"><span class="h-2 w-2 rounded-[3px] bg-white/90"></span></span>
+                Services
+              </span>
+              <h3 id="services-title" class="mt-2 text-[20px] sm:text-[22px] font-black tracking-[-0.03em] text-white/95">All Services</h3>
+              <p class="mt-1 text-[12px] text-white/65 max-w-prose">
+                A complete, end-to-end offering for modern web experiences — optimized for speed, clarity, and long-term maintainability.
+              </p>
+            </div>
+            <button data-modal-close class="btn shrink-0" type="button" aria-label="Close services">Close</button>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">UI</span>
+                <div class="font-black text-white/90">UI / UX Design</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Clean layouts with strong hierarchy, consistent spacing, and accessible contrast. I design flows that reduce friction and keep the user focused on the goal. Deliverables include Figma-ready screens and reusable components.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">Figma</span><span class="chip">A11y</span><span class="chip">Components</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">FE</span>
+                <div class="font-black text-white/90">Frontend Development</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Responsive, pixel-precise builds with professional animation and hover states. I focus on performance, clean structure, and readable UI patterns. The result is production-ready code that’s easy to maintain and extend.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">BE</span>
+                <div class="font-black text-white/90">Backend Development</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Reliable backend foundations with clear endpoints, predictable responses, and sensible structure. I prioritize stability, validation, and clean error handling. Built to support real users without breaking under growth.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">Node</span><span class="chip">Auth</span><span class="chip">Validation</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">API</span>
+                <div class="font-black text-white/90">API Implementation</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Secure integrations with real data, clear loading states, and smooth form workflows. I build APIs and connect them to UIs with a focus on user experience. Everything stays consistent, documented, and scalable.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">REST</span><span class="chip">Forms</span><span class="chip">Docs</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">IoT</span>
+                <div class="font-black text-white/90">IoT Development</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Practical IoT solutions for monitoring and automation — designed for reliability and cost control. I focus on clear device behavior, stable connectivity, and simple dashboards. Great for prototypes and real deployments.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">Sensors</span><span class="chip">Dashboards</span><span class="chip">Automation</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">NE</span>
+                <div class="font-black text-white/90">Network Management</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Clean network setup and troubleshooting with minimal downtime and clear documentation. I verify connectivity, harden common weak spots, and keep operations stable. You get reliability, not just quick fixes.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">Routing</span><span class="chip">Wi-Fi</span><span class="chip">Stability</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">DA</span>
+                <div class="font-black text-white/90">Domain Administration</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                DNS, records, redirects, and email domain setup — done carefully with minimal disruption. I document changes, verify propagation, and keep everything maintainable. Ideal for businesses that need stability and clarity.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">DNS</span><span class="chip">SSL</span><span class="chip">Email</span>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-white/10 bg-black/20 p-4">
+              <div class="flex items-center gap-2">
+                <span class="sq">IT</span>
+                <div class="font-black text-white/90">IT Consulting</div>
+              </div>
+              <p class="mt-2 text-[12px] text-white/65 clamp-3">
+                Clear recommendations based on your goals, budget, and timeline — without unnecessary complexity. I help you choose the right tools, plan the build, and avoid common mistakes. You get a practical roadmap you can execute.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="chip">Planning</span><span class="chip">Best Practices</span><span class="chip">Roadmap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a class="btn-primary w-full" href="https://wa.me/9082159027" target="_blank" rel="noreferrer noopener">Contact Me</a>
+            <a class="btn w-full" href="./ANKIT_MALI_RESUME_MARCH_4.pdf" target="_blank" rel="noreferrer noopener">View Resume</a>
+          </div> 
         </div>
       </div>
     </div>

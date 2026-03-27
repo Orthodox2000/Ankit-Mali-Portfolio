@@ -75,8 +75,56 @@ function setupTilt() {
   }
 }
 
+function setupServicesModal() {
+  const openButton = document.getElementById("open-services");
+  const modal = document.getElementById("services-modal");
+  if (!openButton || !modal) return;
+
+  const overlay = modal.querySelector("[data-modal-overlay]");
+  const closeButton = modal.querySelector("[data-modal-close]");
+  let lastActiveElement = null;
+
+  const isOpen = () => !modal.classList.contains("hidden");
+
+  const open = () => {
+    lastActiveElement = document.activeElement;
+    modal.classList.remove("hidden");
+    modal.classList.add("grid", "place-items-center");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("overflow-hidden");
+
+    window.setTimeout(() => {
+      if (closeButton instanceof HTMLElement) closeButton.focus();
+    }, 0);
+  };
+
+  const close = () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("grid", "place-items-center");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("overflow-hidden");
+
+    if (lastActiveElement instanceof HTMLElement) lastActiveElement.focus();
+  };
+
+  openButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    open();
+  });
+
+  if (overlay instanceof HTMLElement) overlay.addEventListener("click", close);
+  if (closeButton instanceof HTMLElement) closeButton.addEventListener("click", close);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!isOpen()) return;
+    close();
+  });
+}
+
 renderProjects("projects-completed", projectsCompleted);
 setupTilt();
+setupServicesModal();
 
 document.addEventListener("click", (event) => {
   const target = event.target instanceof Element ? event.target.closest('[aria-disabled="true"]') : null;
