@@ -1,0 +1,20 @@
+# Ankit Mali — Portfolio
+# https://ankit.selfiam.site
+
+User-agent: *
+Allow: /
+
+# AI assistants & crawlers welcome (structured FAQ data available in-page)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://ankit.selfiam.site/sitemap.xml

@@ -1,13 +1,11 @@
-const fallbackUrl = "https://github.com/Orthodox2000/";
-
 const projectsCompleted = [
-  { emoji: "\u{1F4D6}", name: "SmartTutor", url: "https://smarttutors.co.in" },
-  { emoji: "\u{1F3C6}", name: "Pixel Cup Winner 2025", url: "https://medi-care-roan.vercel.app" },
+  { emoji: "\u{1F3E2}", name: "Sarvadnya Infotech", url: "https://sarvadnya-infotech.vercel.app" },
+  { emoji: "\u{1F511}", name: "Self-IAM", url: "https://selfiam.site" },
+  { emoji: "\u{1F4BE}", name: "LocalDump", url: "https://localdump.vercel.app" },
+  { emoji: "\u{1F4D6}", name: "SmartTutors", url: "https://smarttutors.co.in" },
   { emoji: "\u{1F310}", name: "DC Infoway (ISP)", url: "https://dcinfoway.in/" },
-  { emoji: "\u{1F3AE}", name: "XO Game (Next.js)", url: "https://xo-with-nextjs.vercel.app/" },
   { emoji: "\u{1F3E5}", name: "HomeCare24", url: "https://homecare24.co.in/" },
-  { emoji: "\u{1F3A8}", name: "Canva Designing", url: fallbackUrl },
-  { emoji: "\u{1F4FA}", name: "Media Hub", url: fallbackUrl },
+  { emoji: "\u{1F4E7}", name: "SelfIAM Mailer", url: "https://selfiam-mailer.vercel.app" },
 ];
 
 function escapeHtml(value) {
