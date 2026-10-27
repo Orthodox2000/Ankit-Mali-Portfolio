@@ -1,900 +1,505 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0b0b0f" />
-  <link rel="icon" href="./favicon.ico" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-  <link rel="manifest" href="./site.webmanifest" />
-  <meta name="description" content="Ankit Mali — DevOps / Web Developer &amp; small-business tech consultant in Navi Mumbai. Affordable audits of your current website, domain, DNS &amp; hosting setup, plain-language advice, deployments and CI/CD automation. Open to freelance projects and full-time roles." />
-  <meta name="keywords" content="Ankit Mali, DevOps Engineer, Web Developer, DevOps Navi Mumbai, CI/CD, GitHub Actions, Vercel, DNS management, domain administration, Next.js developer India, React, Node.js, MongoDB, freelance web developer Mumbai, hire devops engineer, affordable tech consultant, small business IT audit, website audit for small business, cheap website advice, tech consulting for small business, understand my website setup, what is in my current system, IT advice for small business, budget web consultant, Self-IAM, LocalDump, SmartTutors, portfolio" />
-  <meta name="author" content="Ankit Mali" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-  <meta name="geo.region" content="IN-MH" />
-  <meta name="geo.placename" content="Navi Mumbai, Maharashtra, India" />
-  <link rel="canonical" href="https://ankit.selfiam.site/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ankit.selfiam.site/" />
-  <meta property="og:title" content="Ankit Mali · DevOps / Web Developer &amp; Small-Business Tech Consultant" />
-  <meta property="og:description" content="Affordable tech audits &amp; plain-language advice for small businesses — understand exactly what's in your current website, domain &amp; hosting setup. Plus full-stack builds, CI/CD and deployments." />
-  <meta property="og:image" content="https://ankit.selfiam.site/apple-touch-icon.png" />
-  <meta property="og:locale" content="en_IN" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ankit Mali · DevOps / Web Developer &amp; Tech Consultant" />
-  <meta name="twitter:description" content="Small-business friendly tech audits &amp; advice — know what's in your system, what's risky, and what to fix first. Deployments, CI/CD, domains &amp; DNS." />
-  <title>Ankit Mali &#183; DevOps Engineer &amp; Small-Business Tech Consultant</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "name": "Ankit Mali",
-          "alternateName": "Ankit Surendra Mali",
-          "jobTitle": "DevOps / Web Developer",
-          "url": "https://ankit.selfiam.site/",
-          "email": "mailto:ankitmali50@gmail.com",
-          "telephone": "+91-90821-59027",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Navi Mumbai",
-            "addressRegion": "Maharashtra",
-            "addressCountry": "IN"
-          },
-          "alumniOf": "University of Mumbai",
-          "knowsAbout": ["DevOps", "CI/CD Automation", "Web Development", "Next.js", "Node.js", "MongoDB",
-            "DNS & Domain Management", "Cloud Deployment", "Tailwind CSS", "Tech Consulting",
-            "Small Business IT Audits", "Website & System Reviews"],
-          "areaServed": ["Mumbai Metropolitan Region", "Remote Worldwide"],
-          "makesOffer": {
-            "@type": "Offer",
-            "name": "Small-Business Tech Audit & Consulting",
-            "description": "Affordable, plain-language review of your current website, domain, DNS, hosting and deployment setup — what you own, what's risky, and the smallest set of fixes that improve speed, security and reliability without expensive rebuilds.",
-            "areaServed": "Worldwide",
-            "url": "https://ankit.selfiam.site/"
-          },
-          "sameAs": [
-            "https://github.com/Orthodox2000/",
-            "https://www.linkedin.com/in/ankit-mali-720b61337",
-            "https://leetcode.com/u/ankitmali2000/",
-            "https://www.instagram.com/ankit_mali_2000",
-            "https://www.facebook.com/share/1EMEszUnvT/"
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is Ankit Mali available for client projects or a full-time role?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Ankit is currently working as a Web Developer at Sarvadnya Infotech LLP and is open to freelance client projects as well as full-time DevOps / Web Developer opportunities. Reach him at ankitmali50@gmail.com."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What services does Ankit Mali offer clients?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Full-stack web development (Next.js, Node.js, MongoDB), deployment and scaling with CI/CD pipelines (GitHub-to-Vercel), domain & DNS management, SSL setup, and UI/UX-focused front-end builds."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Where is Ankit Mali based and does he work remotely?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "He is based in Navi Mumbai, Maharashtra, India (near Panvel), works on-site across Mumbai, and is comfortable collaborating remotely with clients anywhere."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What results has Ankit delivered for clients?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Shipped 12+ live production sites including an ISP business site that saw roughly a 20% increase in customer inquiries after an SEO-optimized relaunch, plus automated CI/CD pipelines, custom admin panels, and an NPM-published multi-tenant authentication package (Self-IAM)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you offer affordable website and system audits for small businesses?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Ankit reviews your current website, domain, DNS, hosting and deployment setup and explains in plain language what you have, what's risky and what's worth fixing — priced for small businesses, no jargon and no upselling."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can you advise on improving our current setup without an expensive rebuild?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "That is the whole point of the audit. Instead of pushing full rebuilds, Ankit advises the smallest set of changes that improve speed, security and reliability first — so you only invest where it actually helps your business."
-              }
-            }
-          ]
-        }
-      ]
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          screens: {
-            'xs': '420px',
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@600;800&family=Sacramento&family=Poppins:wght@300;400;600;800&display=swap"
-    rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="theme-color" content="#020617" />
+<title>Ankit Mali · Brand Growth &amp; Tech</title>
+<meta name="description" content="Ankit Mali is a Brand Growth Executive and tech professional in Navi Mumbai. He combines digital marketing, content and social media with web development, DevOps, networking and IT support." />
+<meta name="author" content="Ankit Mali" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://ankit.selfiam.site/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ankit.selfiam.site/" />
+<meta property="og:title" content="Ankit Mali · Brand Growth &amp; Tech" />
+<meta property="og:description" content="Brand growth, digital marketing and hands-on tech, from Navi Mumbai." />
+<meta property="og:image" content="https://ankit.selfiam.site/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="./favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+<link rel="manifest" href="./site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ankit Mali","alternateName":"Ankit Surendra Mali","jobTitle":"Brand Growth Executive","url":"https://ankit.selfiam.site/","email":"mailto:ankitmali50@gmail.com","telephone":"+91-90821-59027","worksFor":{"@type":"Organization","name":"Sarvadnya Infotech LLP"},"address":{"@type":"PostalAddress","addressLocality":"Navi Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},"alumniOf":"University of Mumbai","knowsAbout":["Brand growth","Digital marketing","Content creation","Social media management","SEO","Web development","DevOps","DNS management","IT support"],"sameAs":["https://github.com/Orthodox2000/","https://www.linkedin.com/in/ankit-mali-720b61337","https://leetcode.com/u/ankitmali2000/","https://www.instagram.com/ankit_mali_2000","https://www.facebook.com/share/1EMEszUnvT/"]}
+</script>
+<style>
+:root{--bg:#020617;--tile:rgba(15,23,42,.5);--line:rgba(255,255,255,.08);--text:#e2e8f0;--mute:#94a3b8;--dim:#64748b;--em:#10b981;--em2:#34d399;--cy:#06b6d4;--font:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;color:var(--text);font:400 15px/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+background:radial-gradient(1000px 600px at 10% 5%,rgba(16,185,129,.1),transparent 55%),radial-gradient(800px 600px at 95% 15%,rgba(6,182,212,.07),transparent 55%),radial-gradient(1000px 700px at 50% 100%,rgba(56,189,248,.06),transparent 55%),var(--bg);
+padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+a{color:inherit}h1,h2,h3,p,ul{margin:0}ul{padding:0;list-style:none}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--em2);outline-offset:3px;border-radius:8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bento{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tile{position:relative;overflow:hidden;min-width:0;padding:24px;border-radius:24px;border:1px solid var(--line);background:var(--tile);backdrop-filter:blur(8px);transition:border-color .3s;animation:in .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
+.tile::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(16,185,129,.16),transparent 45%)}
+.tile:hover{border-color:rgba(16,185,129,.35)}.tile:hover::before{opacity:1}
+.tile>*{position:relative}
+@keyframes in{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:none}}
+.label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--em2);margin-bottom:14px}
+.label i{width:7px;height:7px;border-radius:50%;background:var(--em);box-shadow:0 0 12px var(--em);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+h2{font-size:20px;font-weight:600;letter-spacing:-.01em;margin-bottom:12px;color:#fff}
+.t-hero{grid-column:span 2;grid-row:span 2;display:flex;flex-direction:column;justify-content:center;padding:36px}
+h1{font-size:clamp(40px,6.2vw,76px);font-weight:800;line-height:1;letter-spacing:-.04em;background:linear-gradient(100deg,#fff 30%,var(--em2) 70%,var(--cy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{margin:18px 0 14px;font-size:18px;font-weight:500;color:var(--em2);min-height:1.7em}
+.role b{display:inline-block;width:2px;height:1.05em;background:var(--em2);margin-left:3px;vertical-align:-3px;animation:pulse 1s steps(2) infinite}
+.lede{color:var(--mute);max-width:46ch;font-size:15.5px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font:600 14px var(--font);text-decoration:none;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px);border-color:rgba(16,185,129,.4)}
+.btn.pri{background:linear-gradient(135deg,var(--em2),#0d9488);border-color:transparent;color:#022c22}
+.btn.pri:hover{box-shadow:0 14px 40px rgba(16,185,129,.3)}
+.t-av{grid-row:span 2;padding:0;min-height:360px;display:grid;place-items:end center;background:radial-gradient(220px 200px at 50% 30%,rgba(16,185,129,.28),transparent 70%),radial-gradient(260px 200px at 50% 90%,rgba(6,182,212,.2),transparent 70%),var(--tile)}
+.t-av img{position:relative;width:auto;height:auto;max-width:72%;max-height:300px;object-fit:contain;margin-bottom:38px;filter:drop-shadow(0 20px 30px rgba(0,0,0,.55));animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.sig{position:absolute!important;left:50%;bottom:14px;white-space:nowrap;font:400 34px/1 "Great Vibes",cursive;color:#fff;text-shadow:0 0 22px rgba(16,185,129,.55);transform:translateX(-50%) rotate(-6deg)}
+.clock{font-size:38px;font-weight:600;letter-spacing:-.02em;color:#fff;font-variant-numeric:tabular-nums}
+.sub{color:var(--mute);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stats b{display:block;font-size:26px;font-weight:800;color:#fff;line-height:1.1}
+.stats span{font-size:11px;color:var(--mute);line-height:1.3;display:block;margin-top:4px}
+.t-tick{grid-column:1/-1;padding:14px 0;border-radius:18px}
+.tick{display:flex;width:max-content;animation:slide 30s linear infinite}
+.tick ul{display:flex;gap:10px;padding-right:10px}
+.tick li{padding:6px 16px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:500;color:var(--mute);white-space:nowrap}
+@keyframes slide{to{transform:translateX(-50%)}}
+.t-exp,.t-term{grid-column:span 2}
+.job{position:relative;padding:0 0 22px 26px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:4px;top:8px;bottom:-4px;width:2px;background:linear-gradient(var(--em),rgba(16,185,129,.1))}
+.job:last-child::before{display:none}
+.job::after{content:"";position:absolute;left:0;top:6px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--em)}
+.job.now::after{background:var(--em);box-shadow:0 0 0 5px rgba(16,185,129,.2);animation:pulse 2s infinite}
+.job h3{font-size:16px;font-weight:600;color:#fff}
+.job .meta{font-size:12px;color:var(--dim);margin:2px 0 8px}
+.job li{font-size:13.5px;color:var(--mute);padding-left:14px;position:relative;margin-top:5px}
+.job li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:var(--em2)}
+.job strong{color:var(--text);font-weight:600}
+.term{font:400 13px/1.9 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:rgba(2,6,23,.7);border:1px solid var(--line);border-radius:14px;padding:14px 16px;min-height:178px}
+.term div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:in .3s both}
+.term .p{color:var(--em2)}.term .ok{color:var(--em)}.term .d{color:var(--dim)}
+.t-term .sub{margin-top:12px}
+.proj{display:flex;flex-direction:column;gap:10px}
+.proj h3{font-size:19px;font-weight:600;color:#fff}
+.stk{font-size:12px;color:var(--cy);font-weight:500}
+.proj p{color:var(--mute);font-size:13.5px}
+.proj p.label{margin-bottom:0;font-size:11px;color:var(--em2)}
+.proj p.stk{color:var(--cy);font-size:12px}
+.go{margin-top:auto;padding-top:8px;color:var(--em2);font-weight:600;font-size:13.5px;text-decoration:none}
+.go span{display:inline-block;transition:transform .25s}.go:hover span{transform:translate(3px,-3px)}
+.go:hover{text-decoration:underline;text-underline-offset:4px}
+.more{display:grid;gap:8px}
+.more a,.soc a{display:flex;justify-content:space-between;padding:11px 14px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:500;font-size:13.5px;transition:border-color .2s,background .2s}
+.more a:hover,.soc a:hover{border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.06)}
+.more a::after,.soc a::after{content:"↗";color:var(--dim)}
+.t-skill,.t-edu{grid-column:span 2}
+.sk{display:grid;grid-template-columns:110px 1fr;gap:10px 14px;align-items:start;margin:0}
+.sk dt{font-size:12px;font-weight:600;color:var(--em2);padding-top:6px}
+.sk dd{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);font-size:12.5px;font-weight:500;transition:border-color .2s,transform .2s}
+.chip:hover{border-color:rgba(16,185,129,.5);transform:translateY(-2px)}
+.edu p{color:var(--mute);font-size:13.5px}
+.edu p.label{color:var(--em2);font-size:11px}
+.gpa{display:flex;align-items:center;gap:14px;margin:14px 0}
+.gpa b{font-size:48px;font-weight:800;line-height:1;color:var(--em2)}
+.edu hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.t-win{grid-column:1/-1}
+.wins{display:flex;flex-wrap:wrap;gap:8px}
+.wins li{padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:13px;color:var(--mute)}
+.wins li.hi{border-color:rgba(16,185,129,.35);color:var(--text);background:rgba(16,185,129,.08)}
+.t-contact{grid-column:1/-1;padding:40px 36px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center}
+.t-contact h2{font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:10px}
+.soc{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.soc a:last-child:nth-child(odd){grid-column:1/-1}
+.foot{max-width:1240px;margin:20px auto 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:var(--dim);font-size:12.5px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,20px);background:var(--em2);color:#022c22;font-weight:600;font-size:13px;padding:10px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50}
+.toast.show{opacity:1;transform:translate(-50%,0)}
 
-  <style type="text/tailwindcss">
-    @layer base {
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-    }
-    @layer components {
-      .muted {
-        @apply text-slate-400;
-      }
-
-      .sq {
-        @apply inline-grid h-[22px] w-[25px] place-items-center rounded-[10px] border border-white/[0.07] bg-white/[0.06] text-[11px] font-black text-white/90;
-      }
-
-      .hint {
-        @apply ml-auto text-slate-500 text-[11px] font-medium hidden xs:block truncate;
-      }
-
-      .stack-pill {
-        @apply flex items-center gap-2 min-w-0 rounded-2xl border border-white/[0.07] bg-slate-900/40 px-2.5 py-[10px] text-[11px] sm:text-[12px] font-semibold text-slate-200 transition overflow-hidden;
-        @apply hover:-translate-y-0.5 hover:border-emerald-500/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)] hover:bg-slate-800/60;
-      }
-
-      .btn {
-        @apply inline-flex items-center justify-center rounded-xl border border-white/[0.07] bg-white/[0.06] px-3 py-[10px] text-[12px] font-bold text-white/85 transition;
-        @apply hover:-translate-y-0.5 hover:border-emerald-500/30 hover:shadow-[0_24px_50px_rgba(0,0,0,0.45)];
-      }
-
-      .btn-primary {
-        @apply inline-flex items-center justify-center rounded-xl border border-emerald-400/30 bg-gradient-to-br from-emerald-400 to-teal-600 px-3 py-[10px] text-[12px] font-bold text-slate-900 transition;
-        @apply hover:-translate-y-0.5 hover:shadow-[0_24px_60px_rgba(16,185,129,0.25)];
-      }
-
-      .metric {
-        @apply rounded-3xl border border-white/[0.07] bg-gradient-to-b from-white/[0.06] to-white/[0.02] px-4 py-3 transition;
-        @apply hover:-translate-y-0.5 hover:border-emerald-500/20 hover:shadow-[0_30px_70px_rgba(0,0,0,0.55)];
-      }
-
-      .metric-num {
-        @apply text-[28px] font-extrabold tracking-tight text-white leading-none;
-      }
-
-      .metric-lbl {
-        @apply mt-2 flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-slate-400;
-      }
-
-      .metric-lbl::before {
-        content: "";
-        @apply h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.6)];
-      }
-
-      .chip {
-        @apply inline-flex items-center gap-2 rounded-full border border-white/[0.07] bg-slate-900/50 px-3 py-1.5 text-[12px] font-semibold text-slate-300;
-      }
-
-      .proj-btn {
-        @apply w-full flex flex-col justify-between gap-1 rounded-2xl border border-white/[0.07] bg-gradient-to-b from-slate-900/60 to-slate-950/40 p-2.5 transition min-h-[44px];
-        @apply hover:-translate-y-1 hover:border-emerald-500/30 hover:from-emerald-500/10 hover:to-slate-950/40 hover:shadow-[0_26px_55px_rgba(0,0,0,0.52)];
-      }
-
-      .proj-row {
-        @apply flex flex-col items-start min-w-0;
-      }
-
-      .proj-emoji {
-        @apply text-[16px] leading-none mb-0.5;
-      }
-
-      .proj-name {
-        @apply text-[13px] font-bold tracking-tight text-white/95 leading-snug;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      }
-
-      .proj-hint {
-        @apply text-[12px] font-bold text-slate-500;
-      }
-
-      .presence-btn {
-        @apply flex items-center gap-2 rounded-2xl border border-white/[0.07] bg-slate-900/40 px-3 py-[10px] text-[12px] font-semibold text-slate-200 transition;
-        @apply hover:-translate-y-0.5 hover:border-emerald-500/30 hover:shadow-[0_26px_55px_rgba(0,0,0,0.42)];
-      }
-
-      .step {
-        @apply flex items-center gap-2 rounded-2xl border border-white/[0.07] bg-black/20 px-3 py-[10px] text-[12px] font-bold text-white/85;
-      }
-
-      .step-ico {
-        @apply inline-grid h-[18px] w-[18px] place-items-center rounded-[6px] border border-white/[0.07] bg-white/[0.06] text-[11px] font-black text-white/85;
-      }
-
-      .exp-item {
-        @apply rounded-2xl border border-white/[0.07] bg-slate-900/30 p-3 transition-colors hover:bg-slate-800/40;
-      }
-
-      .exp-top {
-        @apply flex items-baseline justify-between gap-3;
-      }
-
-      .exp-role {
-        @apply text-[13px] font-bold text-emerald-400;
-      }
-
-      .exp-time {
-        @apply text-[11px] font-bold uppercase tracking-wider text-slate-500 whitespace-nowrap;
-      }
-
-      .clamp-3 {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      }
-    }
-  </style>
-
-  <style>
-    :root {
-      --bg: #020617;
-      --p1: rgba(16, 185, 129, 0.08);
-      --p2: rgba(20, 184, 166, 0.05);
-      --p3: rgba(56, 189, 248, 0.05);
-    }
-
-    body {
-      background:
-        radial-gradient(1000px 600px at 10% 10%, var(--p1), transparent 50%),
-        radial-gradient(800px 600px at 90% 20%, var(--p2), transparent 50%),
-        radial-gradient(1000px 700px at 50% 90%, var(--p3), transparent 50%),
-        var(--bg);
-    }
-
-    .noise::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: url("https://grainy-gradients.vercel.app/noise.svg");
-      opacity: 0.06;
-      mix-blend-mode: overlay;
-    }
-
-    @keyframes borderFlow {
-      from {
-        background-position: 0% 50%;
-      }
-
-      to {
-        background-position: 200% 50%;
-      }
-    }
-
-    .ring-rotate {
-      transition: border-color 0.35s ease;
-    }
-
-    .ring-rotate:hover {
-      border-color: rgba(16, 185, 129, 0.3);
-    }
-
-    .ring-rotate::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      padding: 1px;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #10b981, #06b6d4, #10b981);
-      background-size: 200% 100%;
-      background-position: 0% 50%;
-      animation: borderFlow 5s linear infinite;
-      animation-play-state: paused;
-      opacity: 0.22;
-      pointer-events: none;
-      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      transition: opacity 0.4s ease;
-    }
-
-    .ring-rotate:hover::before {
-      animation-play-state: running;
-      opacity: 0.65;
-    }
-
-    .avatar-3d {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      min-height: 188px;
-      border-radius: 26px;
-      overflow: hidden;
-      transform-style: preserve-3d;
-      background: radial-gradient(180px 140px at 50% 25%, rgba(16, 185, 129, 0.2), transparent 70%),
-        radial-gradient(220px 180px at 50% 80%, rgba(6, 182, 212, 0.15), transparent 70%),
-        rgba(15, 23, 42, 0.6);
-    }
-
-    .avatar-3d::before {
-      content: "";
-      position: absolute;
-      inset: -20%;
-      background: linear-gradient(90deg, rgba(16, 185, 129, 0.4), rgba(6, 182, 212, 0.3), rgba(16, 185, 129, 0.4));
-      background-size: 200% 100%;
-      animation: borderFlow 8s linear infinite;
-      opacity: 0.3;
-      filter: blur(25px);
-      transform: translateZ(-10px);
-    }
-
-    @keyframes shine {
-      0% {
-        transform: translateX(-100%) rotate(25deg);
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
-
-      100% {
-        transform: translateX(100%) rotate(25deg);
-        opacity: 0;
-      }
-    }
-
-    .avatar-3d::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
-      animation: shine 4s ease-in-out infinite;
-      pointer-events: none;
-    }
-
-    .avatar-3d img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center 60%;
-      padding: 12px;
-      z-index: 20;
-      transform: translateZ(30px);
-      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
-    }
-
-    .signature-name {
-      font-family: "Great Vibes", cursive;
-      text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
-      z-index: 30;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-      .ring-rotate::before,
-      .avatar-3d::before,
-      .avatar-3d::after {
-        animation: none;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .bento-grid {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    /* ── Typing Animation ── */
-    .typing-wrap {
-      display: inline-flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .typing-text {
-      color: rgba(52, 211, 153, 0.9);
-      font-size: 12px;
-      font-weight: 500;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 2px solid rgba(52, 211, 153, 0.7);
-      animation: cursorBlink 0.6s step-end infinite;
-      min-width: 0;
-    }
-    @keyframes cursorBlink {
-      50% { border-color: transparent; }
-    }
-
-    /* ── Scroll Reveal ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.35s ease-out, transform 0.35s ease-out;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
-    }
-
-    /* ── Toast ── */
-    .toast {
-      position: fixed;
-      bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: rgba(16, 185, 129, 0.92);
-      color: #022c22;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 8px 20px;
-      border-radius: 999px;
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.2s, transform 0.2s;
-      z-index: 100;
-      backdrop-filter: blur(6px);
-      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.3);
-    }
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-
-    /* ── Magnetic Button ── */
-    .btn, .btn-primary {
-      transition: transform 0.15s ease-out, box-shadow 0.3s, border-color 0.3s;
-    }
-  </style>
+.scrollbar{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(var(--sp,0));background:linear-gradient(90deg,var(--em),var(--cy));z-index:60}
+.tile.rv{animation:none;opacity:0;transform:translateY(28px)}
+.tile.rv.show{animation:in .8s cubic-bezier(.2,.7,.2,1) both}
+.tile.rv .chip,.tile.rv .wins li,.tile.rv .svc>div{opacity:0;transform:translateY(10px)}
+.tile.rv.show .chip,.tile.rv.show .wins li,.tile.rv.show .svc>div{opacity:1;transform:none;transition:opacity .5s,transform .5s,border-color .2s;transition-delay:calc(var(--c,0)*45ms + 250ms)}
+.tile::after{content:"";position:absolute;inset:-1px;padding:1px;border-radius:inherit;pointer-events:none;background:linear-gradient(90deg,var(--em),var(--cy),var(--em));background-size:200% 100%;opacity:0;transition:opacity .4s;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:sweep 4s linear infinite}
+.tile:hover::after{opacity:.7}
+@keyframes sweep{to{background-position:200% 0}}
+.t-av{perspective:700px}
+.t-av img{transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.svc>div{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03);transition:border-color .2s,transform .25s,background .2s}
+.svc>div:hover{border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.06);transform:translateY(-3px)}
+.ic{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:rgba(16,185,129,.12);color:var(--em2);margin-bottom:10px;transition:transform .4s}
+.svc>div:hover .ic{transform:rotate(-8deg) scale(1.1)}
+.ic svg{width:18px;height:18px}
+.svc h3{font-size:15px;font-weight:600;color:#fff}
+.svc .stk{margin:2px 0 6px}
+.svc p{font-size:12.5px;color:var(--mute);line-height:1.5}
+.t-svc,.t-info{grid-column:span 2}
+.info{display:grid;gap:0;margin-top:4px}
+.info li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:14px}
+.info li:first-child{border-top:0}
+.info span{color:var(--dim);font-size:12px;font-weight:500;padding-top:2px}
+.info a{text-decoration:none;font-weight:500;color:var(--text)}
+.info a:hover{color:var(--em2)}
+.avail{display:inline-flex;align-items:center;gap:8px;color:var(--em2);font-weight:600}
+.avail i{width:8px;height:8px;border-radius:50%;background:var(--em);box-shadow:0 0 0 0 rgba(16,185,129,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+.bar{height:6px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--em),var(--cy));transition:width 1.4s cubic-bezier(.2,.7,.2,1) .4s}
+.show .bar i,.bar.go-on i{width:95.7%}
+.t-term,.t-info,.t-exp,.t-svc{display:flex;flex-direction:column}
+.hl{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:auto;padding-top:22px}
+.hl div{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);font-size:12px;color:var(--mute);line-height:1.4;transition:border-color .2s,transform .25s}
+.hl div:hover{border-color:rgba(16,185,129,.4);transform:translateY(-2px)}
+.hl b{display:block;font-size:20px;font-weight:800;color:var(--em2);line-height:1.2}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding:14px 16px;border-radius:14px;border:1px dashed rgba(16,185,129,.35);background:rgba(16,185,129,.05);font-size:13px;color:var(--mute)}
+.cta .btn{min-height:40px;padding:0 18px}
+.pipe{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,1fr);margin:18px 0 4px;position:relative}
+.pipe::before{content:"";position:absolute;left:10%;right:10%;top:7px;height:2px;background:var(--line)}
+.pipe li{position:relative;text-align:center;font-size:12px;font-weight:500;color:var(--dim);transition:color .4s}
+.pipe li::before{content:"";display:block;width:16px;height:16px;border-radius:50%;margin:0 auto 6px;background:var(--bg);border:2px solid var(--line);position:relative;transition:all .4s}
+.pipe li.on{color:var(--em2)}
+.pipe li.on::before{background:var(--em);border-color:var(--em);box-shadow:0 0 0 5px rgba(16,185,129,.18)}
+.pf{display:grid;gap:8px;margin-top:auto;padding-top:18px}
+.pf li{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mute);padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03)}
+.pf li::before{content:"✓";color:var(--em2);font-weight:700}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:16px}
+.qa a{display:flex;justify-content:space-between;padding:11px 14px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:600;font-size:13.5px;background:rgba(255,255,255,.04);transition:border-color .2s,background .2s,transform .2s}
+.qa a:hover{border-color:rgba(16,185,129,.45);background:rgba(16,185,129,.08);transform:translateY(-2px)}
+.qa a::after{content:"↗";color:var(--dim)}
+.now{margin-top:14px;padding:12px 14px;border-radius:12px;border:1px dashed rgba(16,185,129,.35);background:rgba(16,185,129,.05);font-size:13px;color:var(--mute)}
+.now b{color:var(--text);font-weight:600}
+@media (max-width:1000px){.bento{grid-template-columns:repeat(2,1fr)}.t-hero,.t-av{grid-column:1/-1;grid-row:auto}.t-skill,.t-edu,.t-exp,.t-term,.t-svc,.t-info{grid-column:1/-1}}
+@media (max-width:620px){.bento{grid-template-columns:1fr}.tile{padding:20px}.t-hero{padding:26px 22px}.t-contact{grid-template-columns:1fr;padding:28px 22px}.sk,.svc,.qa,.hl{grid-template-columns:1fr}.pipe li{font-size:11px}.info li{grid-template-columns:1fr;gap:2px}.sk dt{padding:0}.soc{grid-template-columns:1fr}.btn{flex:1}.sig{font-size:30px}}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}.tick{flex-wrap:wrap;width:auto}.tick ul[aria-hidden]{display:none}.tile.rv{opacity:1;transform:none}.tile.rv .chip,.tile.rv .wins li,.tile.rv .svc>div{opacity:1;transform:none}.bar i{width:95.7%}}
+</style>
 </head>
+<body>
+<div class="scrollbar" aria-hidden="true"></div>
+<main class="bento" id="top">
 
-<body class="overflow-x-hidden antialiased">
-  <div class="min-h-screen px-[4vw] py-6 grid place-items-center text-slate-200">
-    <div
-      class="noise relative box-border w-full max-w-[1280px] overflow-hidden rounded-[32px] border border-white/[0.07] bg-white/[0.04] backdrop-blur-md shadow-[0_30px_80px_rgba(0,0,0,0.45)] ring-1 ring-inset ring-white/[0.04] p-3 md:p-6">
+  <section class="tile t-hero" aria-labelledby="name">
+    <p class="label"><i></i>Brand Growth Executive · Sarvadnya Infotech LLP</p>
+    <h1 id="name">Ankit Mali</h1>
+    <p class="role" aria-label="Brand growth, digital marketing and tech"><span id="role"></span><b aria-hidden="true"></b></p>
+    <p class="lede">I grow brands through creative content, social media and SEO-minded digital work, backed by hands-on tech: web development, CI/CD, networks and DNS. Based in Navi Mumbai, open to full-time roles and freelance work.</p>
+    <div class="btns">
+      <a class="btn pri" href="mailto:ankitmali50@gmail.com" data-copy="ankitmali50@gmail.com">Email me</a>
+      <a class="btn" href="./ANKIT_MALI_RESUME.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+  </section>
 
-      <div class="grid gap-4 justify-center items-start lg:items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-        aria-label="Bento Grid Portfolio">
+  <figure class="tile t-av" style="margin:0">
+    <img src="./avatar.png" width="294" height="435" alt="Illustration of Ankit Mali in a black hat and hoodie, hand on chin" fetchpriority="high" />
+    <figcaption class="sig" aria-hidden="true">Ankit Surendra Mali</figcaption>
+  </figure>
 
-        <!-- Column 1 -->
-        <div class="flex flex-col gap-5 min-w-0">
-          <section
-            class="js-tilt ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-3 shadow-lg"
-            data-tilt="true" aria-label="Avatar figure">
-            <div class="avatar-hero relative overflow-hidden rounded-[26px]">
-              <div class="avatar-3d">
-                <span class="depth-shadow" aria-hidden="true"></span>
-                <img src="./avatar.png" alt="Ankit Mali Avatar" loading="lazy" />
-              </div>
+  <section class="tile" aria-label="Local time">
+    <p class="label"><i></i>Navi Mumbai</p>
+    <p class="clock" id="clock">--:--</p>
+    <p class="sub">IST · Chirle, near Atal Setu, Panvel</p>
+  </section>
 
-              <div
-                class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/60"
-                aria-hidden="true"></div>
+  <section class="tile" aria-label="Highlights">
+    <p class="label">By the numbers</p>
+    <div class="stats">
+      <div><b data-n="9.57" data-d="2">9.57</b><span>CGPI, B.Sc. IT</span></div>
+      <div><b data-n="300" data-s="+">300+</b><span>LeetCode problems</span></div>
+      <div><b data-n="20" data-s="%">20%</b><span>more ISP inquiries</span></div>
+    </div>
+  </section>
 
-              <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-                <div
-                  class="signature-name absolute left-1/2 bottom-4 whitespace-nowrap leading-none text-white drop-shadow-lg text-[44px] sm:text-[28px] [transform:translateX(-50%)_rotate(-12deg)_translateY(-20%)] [transform-origin:center_bottom]">
-                  Ankit Surendra Mali
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="contact"
-            class="js-tilt ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-            data-tilt="true" aria-label="Call to action">
-            <div class="grid place-items-center text-center gap-3">
-              <div
-                class="grid h-12 w-12 place-items-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 shadow-[0_0_30px_rgba(16,185,129,0.15)] text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 2L11 13" />
-                  <path d="M22 2l-7 20-4-9-9-4 20-7z" />
-                </svg>
-              </div>
-              <h2 class="text-xl font-bold tracking-tight text-white">Let's Connect</h2>
-              <p class="text-[13px] text-slate-400 leading-relaxed">Ready to build, deploy, and automate
-                high-performance platforms.</p>
-              <div class="grid w-full gap-2 mt-2">
-                <a class="btn-primary w-full copy-email" href="mailto:ankitmali50@gmail.com" data-email="ankitmali50@gmail.com">Direct Email</a>
-                <a class="btn w-full" href="./ANKIT_MALI_RESUME.pdf" target="_blank" rel="noreferrer noopener">Download
-                  Resume</a>
-              </div>
-            </div>
-          </section>
-
-          <section
-            class="ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-            aria-label="Online Presence">
-            <div class="flex flex-col items-center text-center gap-2 mb-4">
-              <span
-                class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                Connect
-              </span>
-              <h2 class="text-xl font-bold tracking-tight text-white">Online Pulse</h2>
-            </div>
-
-            <div class="grid gap-2">
-              <a class="presence-btn" href="https://github.com/Orthodox2000/" target="_blank"
-                rel="noreferrer noopener"><span class="sq">GH</span><span class="truncate">Github</span><span
-                  class="hint">↗</span></a>
-              <a class="presence-btn" href="https://www.linkedin.com/in/ankit-mali-720b61337" target="_blank"><span
-                  class="sq">LN</span><span class="truncate">LinkedIn</span><span class="hint">↗</span></a>
-              <a class="presence-btn" href="https://leetcode.com/u/ankitmali2000/" target="_blank"
-                rel="noreferrer noopener"><span class="sq">LC</span><span class="truncate">LeetCode</span><span
-                  class="hint">↗</span></a>
-              <a class="presence-btn" href="https://www.instagram.com/ankit_mali_2000" target="_blank"
-                rel="noreferrer noopener"><span class="sq">IG</span><span class="truncate">Instagram</span><span
-                  class="hint">↗</span></a>
-              <a class="presence-btn" href="https://www.facebook.com/share/1EMEszUnvT/" target="_blank"
-                rel="noreferrer noopener"><span class="sq">FB</span><span class="truncate">Facebook</span><span
-                  class="hint">↗</span></a>
-              <a class="presence-btn" href="https://wa.me/9082159027" target="_blank"
-                rel="noreferrer noopener"><span class="sq">WA</span><span class="truncate">WhatsApp</span><span
-                  class="hint">↗</span></a>
-            </div>
-          </section>
-        </div>
-
-        <!-- Column 2 (Spans 2 columns on desktop) -->
-        <div class="flex flex-col gap-5 min-w-0 lg:col-span-2">
-          <div class="grid grid-cols-3 gap-3 reveal" aria-label="Metrics">
-            <div class="metric ring-rotate relative">
-              <div class="metric-num">12+</div>
-              <div class="metric-lbl">Projects</div>
-            </div>
-            <div class="metric ring-rotate relative">
-              <div class="metric-num">3+</div>
-              <div class="metric-lbl">Years</div>
-            </div>
-            <div class="metric ring-rotate relative">
-              <div class="metric-num">15+</div>
-              <div class="metric-lbl">Tools</div>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <section
-              class="js-tilt ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-              data-tilt="true" aria-label="Profile">
-              <div class="flex items-center justify-between gap-3 mb-5">
-                <span
-                  class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                  Active
-                </span>
-                <div class="flex gap-1.5">
-                  <span class="chip px-2 py-1 text-[9px]">Navi Mumbai</span>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-4">
-                <div class="min-w-0">
-                  <div class="text-lg font-bold tracking-tight text-white leading-none mb-1">Ankit Mali</div>
-                  <div class="typing-wrap"><span class="typing-text" id="typing-target"></span></div>
-                </div>
-              </div>
-
-              <div class="mt-5 space-y-2">
-                <div class="text-[12px] flex items-center gap-2">
-                  <span class="text-slate-500 font-bold uppercase w-10">Web:</span>
-                  <a class="text-slate-300 hover:text-emerald-400 transition-colors truncate"
-                    href="https://ankit.selfiam.site" target="_blank">ankit.selfiam.site</a>
-                </div>
-                <div class="text-[12px] flex items-center gap-2">
-                  <span class="text-slate-500 font-bold uppercase w-10">Email:</span>
-                  <a class="text-slate-300 hover:text-emerald-400 transition-colors truncate copy-email"
-                    href="mailto:ankitmali50@gmail.com" data-email="ankitmali50@gmail.com">ankitmali50@gmail.com</a>
-                </div>
-              </div>
-
-              <p class="mt-4 pt-3 border-t border-white/5 text-[11px] leading-relaxed text-slate-400">
-                Casual tech consultant — shipped 12+ live sites, automated GitHub-to-Vercel CI/CD, and tamed
-                domains, DNS &amp; deployments for real clients. 300+ DSA problems solved; Pixel Cup '25 winner.
-              </p>
-            </section>
-
-            <section
-              class="js-tilt ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-              data-tilt="true" aria-label="Education">
-              <div class="flex flex-col items-start text-left gap-2 mb-4">
-                <span
-                  class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                  Academic
-                </span>
-                <h2 class="text-lg font-bold tracking-tight text-white">Education</h2>
-              </div>
-
-              <div class="mt-5 space-y-2">
-                <div class="text-[12px] flex items-center gap-2">
-                  <span class="text-slate-500 font-bold uppercase w-10">Deg:</span>
-                  <span class="text-slate-300 truncate">B.Sc. Information Technology</span>
-                </div>
-                <div class="text-[12px] flex items-center gap-2">
-                  <span class="text-slate-500 font-bold uppercase w-10">Univ:</span>
-                  <span class="text-slate-300 truncate">University of Mumbai</span>
-                </div>
-                <div class="text-[12px] flex items-center gap-2">
-                  <span class="text-slate-500 font-bold uppercase w-10">Year:</span>
-                  <span class="text-slate-300">2023 — 2026 · CGPI 9.57</span>
-                </div>
-              </div>
-
-              <p class="mt-4 pt-3 border-t border-white/5 text-[11px] leading-relaxed text-slate-400">
-                Three years of shipping real work between lectures — live client sites, CI/CD pipelines,
-                and campus leadership as Student Council President (2025).
-              </p>
-            </section>
-          </div>
-
-          <section class="ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-6 shadow-lg"
-            aria-label="Services">
-            <div class="flex items-center justify-between gap-4 mb-6">
-              <div class="flex flex-col gap-1">
-                <span
-                  class="self-start inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                  Expertise
-                </span>
-                <h2 class="text-2xl font-bold tracking-tight text-white">Core Solutions</h2>
-              </div>
-              <button id="open-services" class="btn-primary px-8" type="button">All Services</button>
-            </div>
-
-            <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-3">
-              <div class="stack-pill py-4 flex-col text-center"><span class="sq mb-2">FE</span> Frontend <span
-                  class="hint !block !ml-0 mt-1 opacity-60">React / Next</span></div>
-              <div class="stack-pill py-4 flex-col text-center"><span class="sq mb-2">BE</span> Backend <span
-                  class="hint !block !ml-0 mt-1 opacity-60">Node / Express</span></div>
-              <div class="stack-pill py-4 flex-col text-center"><span class="sq mb-2">WD</span> Deployment <span
-                  class="hint !block !ml-0 mt-1 opacity-60">Scaling / CI-CD</span></div>
-              <div class="stack-pill py-4 flex-col text-center"><span class="sq mb-2">DA</span> Domain <span
-                  class="hint !block !ml-0 mt-1 opacity-60">DNS / SSL Mgt</span></div>
-            </div>
-          </section>
-
-          <section
-            class="ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-            aria-label="Experience">
-            <div class="flex items-center justify-between mb-4">
-              <h2 class="text-xl font-bold tracking-tight text-white">Work History</h2>
-              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400/60">Journey</span>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
-              <div class="exp-item">
-                <div class="exp-role text-emerald-400">Web Developer</div>
-                <div class="text-[12px] text-slate-300 font-medium">Sarvadnya Infotech LLP</div>
-                <div class="text-[11px] text-slate-500">May 2026 — Pres</div>
-              </div>
-              <div class="exp-item">
-                <div class="exp-role text-emerald-400">Infra Engineer (Intern)</div>
-                <div class="text-[12px] text-slate-300 font-medium">SmartIQ Academy</div>
-                <div class="text-[11px] text-slate-500">Mar — May 2026</div>
-              </div>
-              <div class="exp-item">
-                <div class="exp-role text-emerald-400">Domain Admin &amp; Web Dev</div>
-                <div class="text-[12px] text-slate-300 font-medium">DC Infoway</div>
-                <div class="text-[11px] text-slate-500">Feb — May 2026</div>
-              </div>
-              <div class="exp-item">
-                <div class="exp-role text-emerald-400">Infra &amp; Tech Support</div>
-                <div class="text-[12px] text-slate-300 font-medium">Haripriya Developers</div>
-                <div class="text-[11px] text-slate-500">Feb 2025 — Feb 2026</div>
-              </div>
-            </div>
-
-            <p class="mt-4 pt-3 border-t border-white/5 text-[12px] leading-relaxed text-slate-300">
-              Every great project starts with a simple hello. Stuck on a stubborn deployment? Dreaming up
-              your next big idea? Or just curious what's running under the hood? My inbox is always open —
-              swing by for free guidance, honest career advice, or end-to-end client builds across web,
-              deployment &amp; DevOps.
-              <a class="text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
-                href="mailto:ankitmali50@gmail.com">Drop a mail</a> or ping me on
-              <a class="text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
-                href="https://www.linkedin.com/in/ankit-mali-720b61337" target="_blank"
-                rel="noreferrer noopener">LinkedIn</a> — I reply faster than my CI/CD pipeline.
-            </p>
-          </section>
-        </div>
-
-        <!-- Column 4 -->
-        <div class="flex flex-col gap-5 min-w-0">
-          <section
-            class="js-tilt ring-rotate reveal relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-            data-tilt="true" aria-label="My Stacks">
-            <div class="flex flex-col items-center text-center gap-2 mb-4">
-              <span
-                class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                Tech Stack
-              </span>
-              <h2 class="text-xl font-bold tracking-tight text-white">Digital Arsenal</h2>
-            </div>
-
-            <div class="grid grid-cols-2 gap-2">
-              <div class="stack-pill"><span class="sq">N</span> Next.js</div>
-              <div class="stack-pill"><span class="sq">R</span> React</div>
-              <div class="stack-pill"><span class="sq">T</span> Tailwind</div>
-              <div class="stack-pill"><span class="sq">M</span> MongoDB</div>
-              <div class="stack-pill"><span class="sq">A</span> AWS</div>
-              <div class="stack-pill"><span class="sq">G</span> GitHub</div>
-              <div class="stack-pill"><span class="sq">Nd</span> Node.js</div>
-              <div class="stack-pill"><span class="sq">Fb</span> Firebase</div>
-            </div>
-          </section>
-
-          <section
-            class="js-tilt ring-rotate reveal flex flex-col min-h-0 flex-1 relative rounded-3xl border border-white/[0.07] bg-slate-900/20 p-5 shadow-lg"
-            data-tilt="true" aria-label="Projects">
-            <div class="flex flex-col items-center text-center gap-2 mb-4">
-              <span
-                class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                Portfolio
-              </span>
-              <h2 class="text-xl font-bold tracking-tight text-white">Gallery</h2>
-            </div>
-
-            <div id="projects-completed" class="grid flex-1 content-start grid-cols-1 gap-2.5"
-              aria-label="Project links"></div>
-          </section>
-        </div>
-      </div>
+  <div class="tile t-tick" aria-label="Tools I use">
+    <div class="tick">
+      <ul><li>Brand Growth</li><li>Digital Marketing</li><li>Content Creation</li><li>Social Media</li><li>Digital Ads</li><li>Canva</li><li>Photoshop</li><li>SEO</li><li>Next.js</li><li>Node.js</li><li>MongoDB</li><li>Git &amp; GitHub</li><li>Vercel CI/CD</li><li>DNS &amp; Networking</li></ul>
+      <ul aria-hidden="true"><li>Brand Growth</li><li>Digital Marketing</li><li>Content Creation</li><li>Social Media</li><li>Digital Ads</li><li>Canva</li><li>Photoshop</li><li>SEO</li><li>Next.js</li><li>Node.js</li><li>MongoDB</li><li>Git &amp; GitHub</li><li>Vercel CI/CD</li><li>DNS &amp; Networking</li></ul>
     </div>
   </div>
 
-  <!-- Services Modal -->
-  <div id="services-modal" class="fixed inset-0 z-[80] hidden overflow-y-auto p-4 sm:p-6" aria-hidden="true">
-    <div data-modal-overlay class="absolute inset-0 bg-slate-950/60 backdrop-blur-md"></div>
+  <section class="tile t-exp" aria-labelledby="exp-h">
+    <p class="label">Experience</p>
+    <h2 id="exp-h">Sarvadnya Infotech LLP</h2>
+    <div class="job now">
+      <h3>Brand Growth Executive</h3>
+      <p class="meta">Oct 2026 – present · Belapur, Navi Mumbai</p>
+      <ul>
+        <li>Create <strong>creative and marketing content</strong> for the company and handle its social media interactions and operations.</li>
+        <li>Built and deployed a production app for a <strong>Tally Certified Partner</strong> with Next.js, Tailwind CSS and MongoDB, including a fully customised, updatable admin panel.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Web Developer Intern</h3>
+      <p class="meta">May – Oct 2026 · Belapur, Navi Mumbai</p>
+      <ul>
+        <li>Engineered <strong>Self-IAM</strong>, a standalone NPM auth package using Bcrypt, Firebase and a multi-tenant API for secure SSO across internal platforms.</li>
+        <li>Created <strong>LocalDump</strong>, a utility that fetches, compresses and stores MongoDB Atlas collections locally through structured API calls.</li>
+      </ul>
+    </div>
+    <div class="hl">
+      <div><b>1</b>production app shipped for a Tally Certified Partner</div>
+      <div><b>NPM</b>auth package published (Self-IAM)</div>
+      <div><b>+20%</b>inquiries for an ISP site after an SEO relaunch</div>
+    </div>
+  </section>
 
-    <div class="relative w-full max-w-[980px]">
-      <div role="dialog" aria-modal="true" aria-labelledby="services-title"
-        class="relative max-h-[92vh] overflow-hidden rounded-[32px] border border-white/[0.07] bg-slate-900/40 backdrop-blur-2xl shadow-lg">
-        <div class="max-h-[92vh] overflow-y-auto overscroll-contain p-6 pr-5">
-          <div class="flex items-start justify-between gap-4">
-            <div class="min-w-0">
-              <span
-                class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
-                Services
-              </span>
-              <h3 id="services-title" class="mt-3 text-2xl font-bold tracking-tight text-white">Digital Solutions Suite
-              </h3>
-              <p class="mt-2 text-[13px] text-slate-400 max-w-2xl leading-relaxed">
-                A comprehensive offering for modern digital experiences—engineered for performance, scalability, and
-                aesthetic excellence.
-              </p>
-            </div>
-            <button data-modal-close class="btn shrink-0 px-5" type="button" aria-label="Close services">Close</button>
-          </div>
+  <section class="tile t-term" aria-labelledby="term-h">
+    <p class="label">How I ship</p>
+    <h2 id="term-h">A push becomes a live site</h2>
+    <div class="term" id="term" role="img" aria-label="Terminal showing git push triggering a Vercel build, checks and a production deploy"></div>
+    <ol class="pipe" aria-hidden="true"><li>Push</li><li>Build</li><li>Checks</li><li>Deploy</li><li>Live</li></ol>
+    <p class="sub">The GitHub-to-Vercel pipeline I set up for DC Infoway, step by step.</p>
+    <ul class="pf">
+      <li>Stable, automated deployments with no manual uploads</li>
+      <li>Responsive, SEO-optimised output behind a custom domain</li>
+      <li>DNS and hosting (Vercel, Hostinger) handled end to end</li>
+    </ul>
+  </section>
 
-          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">UI</span>
-                <div class="font-bold text-white">UI / UX Design</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                High-fidelity layouts with clean hierarchy and accessible contrast. Focused on reducing friction and
-                maximizing user engagement through modern patterns.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">Figma</span><span class="chip">A11y</span><span class="chip">Design Systems</span>
-              </div>
-            </div>
+  <article class="tile proj">
+    <p class="label">Project</p>
+    <h3>Sarvadnya Infotech</h3>
+    <p class="stk">Next.js · Tailwind CSS · MongoDB</p>
+    <p>Full-stack site for a Tally Certified Partner with a custom admin panel, so the team updates content and runs daily operations on their own.</p>
+    <a class="go" href="https://sarvadnyainfotech.com/" target="_blank" rel="noopener">sarvadnyainfotech.com <span>↗</span></a>
+  </article>
 
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">FE</span>
-                <div class="font-bold text-white">Frontend Engineering</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                Responsive, pixel-perfect builds using React and Next.js. Optimized for Core Web Vitals and seamless
-                interactive states.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span>
-              </div>
-            </div>
+  <article class="tile proj">
+    <p class="label">Project</p>
+    <h3>Self-IAM</h3>
+    <p class="stk">Next.js · MongoDB · ContactKit · Bcrypt · Firebase</p>
+    <p>Multi-tenant, API-based authentication published as an NPM package. Plug it into existing forms; credentials are hashed with Bcrypt.</p>
+    <a class="go" href="https://selfiam.site" target="_blank" rel="noopener">selfiam.site <span>↗</span></a>
+  </article>
 
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">BE</span>
-                <div class="font-bold text-white">Backend Systems</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                Robust server-side logic with Node.js. Secure authentication, efficient database schemas, and clean API
-                architectures.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span>
-              </div>
-            </div>
+  <article class="tile proj">
+    <p class="label">Project</p>
+    <h3>DC Infoway</h3>
+    <p class="stk">HTML · CSS · Tailwind · Vercel · Hostinger</p>
+    <p>SEO-optimised, responsive site for a local ISP that drove a 20% increase in inquiries, deployed through a GitHub-to-Vercel pipeline.</p>
+    <a class="go" href="https://dcinfoway.in" target="_blank" rel="noopener">dcinfoway.in <span>↗</span></a>
+  </article>
 
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">TC</span>
-                <div class="font-bold text-white">Tally Customization</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                Advanced TDL development for ERP automation. Custom modules for inventory, finance, and specialized
-                business workflows.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">TallyPrime</span><span class="chip">TDL</span><span class="chip">Automation</span>
-              </div>
-            </div>
+  <section class="tile" aria-label="More builds">
+    <p class="label">More builds</p>
+    <div class="more">
+      <a href="https://localdump.vercel.app" target="_blank" rel="noopener">LocalDump</a>
+      <a href="https://smarttutors.co.in" target="_blank" rel="noopener">SmartTutors</a>
+      <a href="https://homecare24.co.in/" target="_blank" rel="noopener">HomeCare24</a>
+      <a href="https://selfiam-mailer.vercel.app" target="_blank" rel="noopener">Self-IAM Mailer</a>
+    </div>
+  </section>
 
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">DA</span>
-                <div class="font-bold text-white">Domain & Infrastructure</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                Full-cycle domain administration, DNS management, and SSL deployment. Ensuring maximum uptime and
-                security.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">DNS</span><span class="chip">SSL</span><span class="chip">CI/CD</span><span
-                  class="chip">Networking</span>
-              </div>
-            </div>
+  <section class="tile t-svc" aria-labelledby="svc-h">
+    <p class="label">Where I help</p>
+    <h2 id="svc-h">Growth, content and tech</h2>
+    <div class="svc">
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span><h3>Brand &amp; content</h3><p class="stk">Canva / Photoshop</p><p>Creative content and digital advertisements for company campaigns.</p></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><h3>Social media</h3><p class="stk">Content / Community</p><p>Posting, audience interactions and day-to-day social operations.</p></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v10l8 5 8-5V7z"/><path d="m12 22V12M4 7l8 5 8-5"/></svg></span><h3>Web &amp; SEO</h3><p class="stk">Next.js / Tailwind</p><p>Fast, SEO-optimised sites. DC Infoway saw 20% more inquiries.</p></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></span><h3>Tech &amp; infrastructure</h3><p class="stk">DNS / CI-CD / Support</p><p>Domains, networks, deployments and desktop or Outlook support.</p></div>
+    </div>
+    <div class="cta"><span>Not sure where to start? Send a short note and I’ll suggest where I can help.</span><a class="btn pri" href="mailto:ankitmali50@gmail.com" data-copy="ankitmali50@gmail.com">Email me</a></div>
+  </section>
 
-            <div class="rounded-3xl border border-white/5 bg-slate-950/40 p-5 transition hover:bg-slate-900/40">
-              <div class="flex items-center gap-3">
-                <span class="sq">IT</span>
-                <div class="font-bold text-white">Strategic Consulting</div>
-              </div>
-              <p class="mt-3 text-[12px] text-slate-400 leading-relaxed">
-                Technical roadmapping and tool selection based on business goals. Bridging the gap between complex tech
-                and business needs.
-              </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="chip">Roadmap</span><span class="chip">Scalability</span><span
-                  class="chip">Architecture</span>
-              </div>
-            </div>
-          </div>
+  <section class="tile t-info" aria-labelledby="info-h">
+    <p class="label">Contact details</p>
+    <h2 id="info-h">Get in touch</h2>
+    <ul class="info">
+      <li><span>Email</span><a href="mailto:ankitmali50@gmail.com" data-copy="ankitmali50@gmail.com">ankitmali50@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+919082159027">+91 90821 59027</a></li>
+      <li><span>Based in</span><p>Chirle, near Atal Setu, Panvel, Navi Mumbai, Maharashtra, India</p></li>
+      <li><span>Website</span><a href="https://ankit.selfiam.site" target="_blank" rel="noopener">ankit.selfiam.site</a></li>
+      <li><span>Availability</span><p class="avail"><i></i>Open to full-time roles and freelance projects</p></li>
+    </ul>
+    <p class="now"><b>Currently:</b> Brand Growth Executive at Sarvadnya Infotech LLP, Belapur. Best for brand growth, digital marketing, content, web and tech support.</p>
+    <div class="qa">
+      <a href="tel:+919082159027">Call</a>
+      <a href="https://wa.me/919082159027" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/ankit-mali-720b61337" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="./ANKIT_MALI_RESUME.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </section>
 
-          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <a class="btn-primary w-full" href="https://wa.me/9082159027" target="_blank"
-              rel="noreferrer noopener">Inquire Now</a>
-            <a class="btn w-full" href="./ANKIT_MALI_RESUME.pdf" target="_blank" rel="noreferrer noopener">View
-              Resume</a>
-          </div>
-        </div>
+  <section class="tile t-skill" aria-labelledby="sk-h">
+    <p class="label">Skills</p>
+    <h2 id="sk-h">What I work with</h2>
+    <dl class="sk">
+      <dt>Marketing &amp; creative</dt><dd><span class="chip">Brand growth</span><span class="chip">Content creation</span><span class="chip">Social media</span><span class="chip">Digital advertisements</span><span class="chip">Canva</span><span class="chip">Photoshop</span></dd>
+      <dt>Build</dt><dd><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Tailwind CSS</span><span class="chip">React</span><span class="chip">Firebase</span></dd>
+      <dt>Ship</dt><dd><span class="chip">Git &amp; GitHub</span><span class="chip">GitHub → Vercel CI/CD</span><span class="chip">Hostinger</span></dd>
+      <dt>Data</dt><dd><span class="chip">MongoDB</span><span class="chip">MySQL</span></dd>
+      <dt>Infra &amp; support</dt><dd><span class="chip">Network management</span><span class="chip">DNS configuration</span><span class="chip">Desktop support</span><span class="chip">Hardware installs</span><span class="chip">Outlook setup</span></dd>
+    </dl>
+  </section>
+
+  <section class="tile t-edu edu" aria-labelledby="edu-h">
+    <p class="label">Education</p>
+    <h2 id="edu-h">B.Sc. Information Technology</h2>
+    <p>St. Wilfred’s College of Arts, Commerce &amp; Science · University of Mumbai</p>
+    <div class="gpa"><b data-n="9.57" data-d="2">9.57</b><span class="sub">CGPI · 2023 – 2026<br>Departmental topper, 2025–26</span></div>
+    <div class="bar" role="img" aria-label="CGPI 9.57 out of 10"><i></i></div>
+    <p class="sub" style="margin-top:6px">9.57 out of 10</p>
+    <hr />
+    <p>Higher Secondary Certificate · CBSE · 71% · Lady Khatun Marium School &amp; Junior College · 2018 – 2019</p>
+  </section>
+
+  <section class="tile t-win" aria-label="Achievements and certifications">
+    <p class="label">Achievements &amp; certifications</p>
+    <ul class="wins">
+      <li class="hi">Pixel Cup 2025 winner · website design</li>
+      <li class="hi">Student Council president · 2025</li>
+      <li class="hi">Departmental topper · 2025–26</li>
+      <li class="hi">College Science Fair gold medallist · 2023–24</li>
+      <li>300+ data structure problems on LeetCode</li>
+      <li>National Olympiad level 2 participant · maths</li>
+      <li>IBM SkillsBuild professional ethics certificate</li>
+      <li>Maharashtra Intermediate Drawing · ‘B’ grade</li>
+      <li>57th Inter-Collegiate / Department Youth Festival participant</li>
+    </ul>
+  </section>
+
+  <section class="tile t-contact" id="contact" aria-labelledby="c-h">
+    <div>
+      <h2 id="c-h">Let’s grow something together</h2>
+      <p class="sub" style="font-size:15px;max-width:44ch">Brand growth, digital marketing or tech support: tell me what you’re working on and I’ll get back to you.</p>
+      <div class="btns">
+        <a class="btn pri" href="mailto:ankitmali50@gmail.com" data-copy="ankitmali50@gmail.com">ankitmali50@gmail.com</a>
+        <a class="btn" href="https://wa.me/919082159027" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-  </div>
+    <div class="soc">
+      <a href="https://github.com/Orthodox2000/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ankit-mali-720b61337" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://leetcode.com/u/ankitmali2000/" target="_blank" rel="noopener">LeetCode</a>
+      <a href="https://www.instagram.com/ankit_mali_2000" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/1EMEszUnvT/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </section>
+</main>
 
-  <div id="toast" class="toast" aria-live="polite"></div>
-  <script src="./script.js"></script>
+<footer class="foot"><span>© 2026 Ankit Mali</span><a href="#top">Back to top ↑</a></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll(".tile").forEach(function (t, i) {
+    t.style.setProperty("--i", Math.min(i, 12));
+    t.addEventListener("pointermove", function (e) {
+      var r = t.getBoundingClientRect();
+      t.style.setProperty("--mx", e.clientX - r.left + "px");
+      t.style.setProperty("--my", e.clientY - r.top + "px");
+    });
+  });
+
+
+  var bar = document.querySelector(".scrollbar");
+  function sp() { var h = document.documentElement; bar.style.setProperty("--sp", (h.scrollTop / Math.max(h.scrollHeight - h.clientHeight, 1)).toFixed(3)); }
+  addEventListener("scroll", sp, { passive: true }); sp();
+
+  var tiles = document.querySelectorAll(".tile");
+  if (!reduce && "IntersectionObserver" in window) {
+    var rio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("show"); rio.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    tiles.forEach(function (t, i) {
+      if (i < 6) return;
+      t.classList.add("rv");
+      t.querySelectorAll(".chip,.wins li,.svc>div").forEach(function (c, k) { c.style.setProperty("--c", k); });
+      rio.observe(t);
+    });
+  } else { document.querySelectorAll(".bar").forEach(function (b) { b.classList.add("go-on"); }); }
+
+  var av = document.querySelector(".t-av");
+  if (av && !reduce && matchMedia("(pointer: fine)").matches) {
+    av.addEventListener("pointermove", function (e) {
+      var r = av.getBoundingClientRect();
+      av.style.setProperty("--ry", ((e.clientX - r.left) / r.width - .5) * 14 + "deg");
+      av.style.setProperty("--rx", (.5 - (e.clientY - r.top) / r.height) * 10 + "deg");
+    });
+    av.addEventListener("pointerleave", function () { av.style.setProperty("--rx", "0deg"); av.style.setProperty("--ry", "0deg"); });
+  }
+
+  var roleEl = document.getElementById("role");
+  var roles = ["Brand Growth Executive", "Digital Marketer", "Content & Social Media", "Web Developer", "DevOps Enthusiast"];
+  if (reduce) { roleEl.textContent = "Brand Growth / Digital Marketing / Tech"; }
+  else {
+    var wi = 0, ci = 0, del = false;
+    (function tick() {
+      var w = roles[wi], d = del ? 30 : 70;
+      ci += del ? -1 : 1;
+      roleEl.textContent = w.slice(0, ci);
+      if (!del && ci === w.length) { del = true; d = 1500; }
+      else if (del && ci === 0) { del = false; wi = (wi + 1) % roles.length; d = 350; }
+      setTimeout(tick, d);
+    })();
+  }
+
+  var clock = document.getElementById("clock");
+  var fmt = new Intl.DateTimeFormat("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit", hour12: true });
+  function upd() { clock.textContent = fmt.format(new Date()).toUpperCase(); }
+  upd(); setInterval(upd, 15000);
+
+  function fmtN(el, v) { el.textContent = v.toFixed(+(el.dataset.d || 0)) + (el.dataset.s || ""); }
+  if (!reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        var el = e.target, to = +el.dataset.n;
+        (function f(now, t0) {
+          t0 = t0 || now;
+          var p = Math.min((now - t0) / 1100, 1);
+          fmtN(el, to * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(function (n) { f(n, t0); });
+        })(performance.now());
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll("[data-n]").forEach(function (n) { io.observe(n); });
+  }
+
+  var term = document.getElementById("term");
+  var steps = [
+    ['<span class="p">$</span> git push origin main', 500],
+    ['<span class="d">→ GitHub webhook received</span>', 650],
+    ['<span class="ok">✓</span> Vercel build started', 700],
+    ['<span class="ok">✓</span> Dependencies installed', 700],
+    ['<span class="ok">✓</span> Build passed', 700],
+    ['<span class="ok">✓</span> Deployed to production', 700],
+    ['<span class="d">Live. Zero manual steps.</span>', 3000]
+  ];
+  var pipeEls = document.querySelectorAll(".pipe li"), on = [1, 1, 2, 3, 3, 4, 5];
+  function pipe(i) { pipeEls.forEach(function (el, k) { el.classList.toggle("on", k < on[i]); }); }
+  function add(i) { var d = document.createElement("div"); d.innerHTML = steps[i][0]; term.appendChild(d); }
+  if (reduce) { steps.forEach(function (_, i) { add(i); }); pipe(steps.length - 1); }
+  else (function run(i) {
+    if (i === 0) term.innerHTML = "";
+    add(i); pipe(i);
+    setTimeout(function () { run(i + 1 >= steps.length ? 0 : i + 1); }, steps[i][1]);
+  })(0);
+
+  var toast = document.getElementById("toast"), timer;
+  document.querySelectorAll("[data-copy]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (!navigator.clipboard) return;
+      e.preventDefault();
+      navigator.clipboard.writeText(a.dataset.copy).then(function () {
+        toast.textContent = "Email copied";
+        toast.classList.add("show");
+        clearTimeout(timer);
+        timer = setTimeout(function () { toast.classList.remove("show"); }, 1800);
+      }, function () { location.href = a.getAttribute("href"); });
+    });
+  });
+})();
+</script>
 </body>
-
 </html>
